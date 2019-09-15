@@ -105,6 +105,9 @@ eeee0000:0005:22f4
 00c00000:03f5:0001
 	s 11391250:22000000:0:4:192:2:0
 /
+00c00000:03f6:0001
+	s 11406000:22000000:1:2:192:2:0:1:2:0:2
+/
 00c00000:03f7:0001
 	s 11420750:22000000:0:4:192:2:0
 /
@@ -125,6 +128,9 @@ eeee0000:0005:22f4
 /
 00c00000:03ff:0001
 	s 11552750:22000000:0:2:192:2:0:1:2:0:2
+/
+00c00000:0400:0001
+	s 11568000:23000000:1:3:192:2:0:1:2:0:2
 /
 00c00000:0401:0001
 	s 11582250:22000000:0:2:192:2:0:1:2:0:2
@@ -380,6 +386,12 @@ eeee0000:0005:22f4
 /
 end
 services
+1a37:00c00000:0400:0001:0:0
+PlanetaHD(test_HEVC_aac)
+p:Kartina Satellite
+1a38:00c00000:0400:0001:0:0
+Mult(test_HEVC_aac)
+p:Kartina Satellite
 0200:eeee0000:0005:22c7:1:0
 Pax TV
 p:Antenna Hungária
@@ -531,7 +543,7 @@ p:SWR
 Fix TV
 p:Antenna Hungária
 0306:00c00000:0007:0085:1:0
-GOD Channel
+.
 p:BetaDigital
 1006:eeee0000:d104:20bf:1:0
 STV
@@ -782,9 +794,15 @@ p:CAZPES,C:0000
 012c:eeee0000:0003:22c7:1:0
 AXN
 p:Antenna Hungária,c:000bb9,c:030bb9,c:050001,c:09bbd0202,C:0000
+1a2c:00c00000:0400:0001:1:0
+Izvestia(test_avc_aac)
+p:Kartina Satellite
 012d:eeee0000:0003:22c7:1:0
 VIASAT3
 p:Antenna Hungária,C:0000
+1a2d:00c00000:0400:0001:1:0
+Channel 5 (Ukraine)(test_avc_aac)Encrypted
+p:Kartina Satellite
 332d:00c00000:045b:0001:1:0
 ORF III
 p:ORF,C:0000
@@ -800,6 +818,9 @@ p:BetaDigital
 012e:eeee0000:0003:22c7:1:0
 RTL+
 p:Antenna Hungária,C:0000
+1a2e:00c00000:0400:0001:1:0
+TVCi(test_avc_aac)
+p:Kartina Satellite
 272e:00c00000:0402:0001:1:0
 CNBC Europe
 p:SES ASTRA
@@ -815,6 +836,9 @@ p:Movistar+,C:0000
 012f:eeee0000:0003:22c7:1:0
 PRIME
 p:Antenna Hungária,c:000bd7,c:020bd9,c:030bd7,c:050001,C:0000
+1a2f:00c00000:0400:0001:1:0
+CTV(test_avc_aac)
+p:Kartina Satellite
 332f:00c00000:045b:0001:1:0
 Welt der Wunder
 p:-
@@ -827,6 +851,9 @@ p:BetaDigital
 0130:eeee0000:0003:22c7:1:0
 Da Vinci Learning
 p:Antenna Hungária,c:000be1,c:030be1,c:050001,C:0000
+1a30:00c00000:0400:0001:1:0
+Trofey(test_avc_aac)
+p:Kartina Satellite
 2f30:00c00000:0441:0001:1:0
 RTLplus
 p:CBC
@@ -839,6 +866,9 @@ p:Antenna Hungária,c:000beb,c:030beb,c:050001,C:0000
 1131:00c00000:0404:0001:1:0
 TVE INTERNACIONAL EUROPA
 p:RTVE
+1a31:00c00000:0400:0001:1:0
+Shanson(test_avc_aac)
+p:Kartina Satellite
 7031:00c00000:041b:0001:1:0
 tagesschau24
 p:ARD
@@ -851,6 +881,9 @@ p:Antenna Hungária,C:0000
 1132:00c00000:0404:0001:1:0
 CANAL 24 HORAS
 p:RTVE
+1a32:00c00000:0400:0001:1:0
+REN TV Int.(test_avc_aac)
+p:Kartina Satellite
 3332:00c00000:045b:0001:1:0
 sixx Austria
 p:sevenonemedia
@@ -872,6 +905,9 @@ p:-
 0134:eeee0000:0003:22c7:1:0
 National Geographic
 p:Antenna Hungaria,C:0000
+1a34:00c00000:0400:0001:1:0
+DOM-INT(test_avc_aac)
+p:Kartina Satellite
 7034:00c00000:041b:0001:1:0
 arte
 p:ARD,c:000191,c:010193,c:020194,c:030191
@@ -881,6 +917,9 @@ p:BetaDigital
 0135:eeee0000:0003:22c7:1:0
 Filmbox
 p:Antenna Hungária,c:000c13,c:030c13,c:050001,C:0000
+1a35:00c00000:0400:0001:1:0
+Peretz Int(test_avc_aac)
+p:Kartina Satellite
 7035:00c00000:041b:0001:1:0
 phoenix
 p:ARD
@@ -890,6 +929,9 @@ p:BetaDigital
 0136:eeee0000:0003:22c7:1:0
 Eurosport
 p:Antenna Hungária,c:000c1d,c:030c1d,c:050001,C:0b00
+1a36:00c00000:0400:0001:1:0
+CTC Int(test_avc_aac)
+p:Kartina Satellite
 3336:00c00000:045b:0001:1:0
 ServusTV Deutschland
 p:ServusTV
@@ -902,6 +944,9 @@ p:Movistar+,C:0000
 0137:eeee0000:0003:22c7:1:0
 Mozi+
 p:Antenna Hungária,c:000c27,c:030c27,c:050001,C:0000
+1a37:00c00000:0400:0001:1:0
+PlanetaHD(test_HEVC_aac)
+p:Kartina Satellite
 3337:00c00000:045b:0001:1:0
 ServusTV Oesterreich
 p:ServusTV,C:0000
@@ -911,6 +956,9 @@ p:BetaDigital
 0138:eeee0000:0003:22c7:1:0
 Spektrum
 p:Antenna Hungária,C:0000
+1a38:00c00000:0400:0001:1:0
+Mult(test_HEVC_aac)Encrypted
+p:Kartina Satellite
 3138:00c00000:0459:0001:1:0
 health.tv
 p:MB Satellite
@@ -920,6 +968,9 @@ p:24H,C:0000
 0139:eeee0000:0003:22c7:1:0
 Izaura TV
 p:,c:000c3b,c:030c3b,c:050001
+1a39:00c00000:0400:0001:1:0
+Perez Int.(test_avc_mpeg2)
+p:Kartina Satellite
 3139:00c00000:0459:0001:1:0
 K-TV
 p:MB Satellite
@@ -932,6 +983,9 @@ p:Digital+,C:0000
 013a:eeee0000:0003:22c7:1:0
 Zenebutik
 p:,c:000c45,c:030c45,c:050001
+1a3a:00c00000:0400:0001:1:0
+Rybalka i Oxota
+p:Kartina Satellite
 2f3a:00c00000:0441:0001:1:0
 n-tv
 p:CBC
@@ -941,30 +995,45 @@ p:BetaDigital
 013b:eeee0000:0003:22c7:1:0
 FEM3
 p:
+1a3b:00c00000:0400:0001:1:0
+Mir Seriala
+p:Kartina Satellite
 003c:00c00000:0007:0085:1:0
 Comedy Central Austria
 p:MTV Networks
 013c:eeee0000:0003:22c7:1:0
 Spektrum Home
 p:AMC Networks,c:000c59,c:030c59,c:050001
+1a3c:00c00000:0400:0001:1:0
+Detskii Mir
+p:Kartina Satellite
 313c:00c00000:0459:0001:1:0
 Deutsches Musik Fernsehen
 p:MB Satellite
 003d:00c00000:0007:0085:1:0
 NICKELODEON AT
 p:MTV Networks
+1a3d:00c00000:0400:0001:1:0
+Lyubimoe Kino
+p:Kartina Satellite
 6e3d:00c00000:0431:0001:1:0
 ARD-TEST-1
 p:ARD
 003e:00c00000:0005:0085:1:0
 EWTN katholisches TV
 p:BetaDigital
+1a3e:00c00000:0400:0001:1:0
+360 MIR
+p:Kartina Satellite
 313e:00c00000:0459:0001:1:0
 MB SAT - Test 8
 p:MB Satellite
 003f:00c00000:0021:0085:1:0
 DMAX
 p:BetaDigital
+1a3f:00c00000:0400:0001:1:0
+5 Channel SPB int
+p:Kartina Satellite
 0040:00c00000:0005:0085:1:0
 QVC Style
 p:BetaDigital
@@ -1401,7 +1470,7 @@ p:ZDFvision
 DISNEY JR
 p:DIGITAL+,C:0000
 756b:00c00000:0412:0001:1:0
-BEINLALIGA1
+M. LaLiga 1
 p:Movistar+,C:0000
 126c:00c00000:03f7:0001:1:0
 .
@@ -1413,7 +1482,7 @@ p:SES ASTRA,C:0000
 M. ACCIÓN
 p:Movistar+,C:0000
 756c:00c00000:0412:0001:1:0
-M. FÚTBOL 2
+#VAMOS BAR1
 p:Movistar+,C:0000
 126d:00c00000:03f7:0001:1:0
 .
@@ -1437,7 +1506,7 @@ p:ZDFvision
 M. DRAMA
 p:Movistar+,C:0000
 756e:00c00000:0412:0001:1:0
-BEINLALIGA7
+M. LaLiga 7
 p:Movistar+,C:0000
 126f:00c00000:03f7:0001:1:0
 .2.
@@ -1488,7 +1557,7 @@ p:0RS
 M. DEPORTES3
 p:Movistar+,C:0000
 7574:00c00000:0412:0001:1:0
-LaLiga123TVM2
+LALIGATVBAR3
 p:Movistar+,C:0000
 2775:eeee0000:0190:2028:1:0
 ORF1
@@ -1530,13 +1599,13 @@ p:ARD
 #0
 p:Movistar+,C:0000
 7578:00c00000:0412:0001:1:0
-LaLiga123TVM1
+M. LaLiga 10
 p:Movistar+,C:0000
 6f79:00c00000:0457:0001:1:0
 WDR Duisburg
 p:ARD
 7579:00c00000:0412:0001:1:0
-BEINLALIGA5
+M. LaLiga 5
 p:Movistar+
 1c7a:00c00000:0457:0001:1:0
 Sky News Intl
@@ -1569,7 +1638,7 @@ p:GLOBECAST
 TLC
 p:OiV
 757e:00c00000:0412:0001:1:0
-BEINLALIGA6
+M. LaLiga 6
 p:Movistar+
 0c7f:eeee0000:d405:20bf:1:0
 HBO HD
@@ -1584,7 +1653,7 @@ p:OiV
 RTL Austria
 p:RTL
 7580:00c00000:0412:0001:1:0
-BEINLALIGA2
+M. LaLiga 2
 p:Movistar+
 0381:00c00000:0021:0085:1:0
 e8 television
@@ -1593,7 +1662,7 @@ p:BetaDigital
 HBO3 HD
 p:OiV
 7581:00c00000:0412:0001:1:0
-BEINLALIGA3
+M. LaLiga 9
 p:Movistar+
 0382:00c00000:0021:0085:1:0
 MediaShop- Neuheiten
@@ -1605,7 +1674,7 @@ p:OiV
 Toute L Histoire
 p:AB SAT,C:0500,C:0100
 7582:00c00000:0412:0001:1:0
-LALIGATVBAR2
+LALIGATVBAR4
 p:Movistar+
 0383:00c00000:0021:0085:1:0
 meinTVshop
@@ -1623,7 +1692,7 @@ p:BetaDigital
 Klasik TV
 p:OiV
 7584:00c00000:0412:0001:1:0
-TEST VB2
+#VAMOS BAR2
 p:Movistar+,c:001004,c:011005,c:031004,C:1810,C:0100
 0c85:eeee0000:d405:20bf:1:0
 AMC
@@ -1686,8 +1755,8 @@ p:NATGEO,C:0000
 ALQUILER 1
 p:TQ1,C:0000
 778e:00c00000:0424:0001:1:0
-M. FÚTBOL
-p:Movistar+,C:0000
+#VAMOS BAR
+p:Movistar+,c:0000a1,c:010054,c:0300a1,C:0000
 708f:00c00000:0443:0001:1:0
 SUPER RTL A
 p:RTL
@@ -1704,7 +1773,7 @@ p:Antenna Hungária,c:000fa1,c:030fa1,c:050001,C:0000
 ORF2 V
 p:ORF
 7690:00c00000:041e:0001:1:0
-BEINLALIGA8
+M. LaLiga 8
 p:Movistar+,C:0000
 7790:00c00000:0424:0001:1:0
 CALLE 13
@@ -1716,7 +1785,7 @@ p:Antenna Hungária,c:000fab,c:030fab,c:050001,c:09fb10101,C:0000
 12363V SID 0x2391
 p:DVB-S QPSK 12363V 19.2Â°E
 7691:00c00000:041e:0001:1:0
-LaLiga123TVM4
+TEST Z
 p:Movistar+,C:0000
 0192:eeee0000:0004:22c7:1:0
 Spiler TV
@@ -1803,7 +1872,7 @@ p:ARD
 NICK JR
 p:DIGITAL+,C:0000
 7797:00c00000:0424:0001:1:0
-BEIN LALIGA
+M. LaLiga
 p:Movistar+,C:0000
 0198:eeee0000:0004:22c7:1:0
 Paramount Channel
@@ -1827,8 +1896,8 @@ p:Antenna Hungária,c:001005,c:031005,c:050001,C:0b00
 DIVINITY
 p:DIGITAL+,C:0000
 769a:00c00000:041e:0001:1:0
-LALIGATVBAR1
-p:Movistar,C:0000
+LALIGATVBAR2
+p:Movistar+,C:0000
 019b:eeee0000:0004:22c7:1:0
 Viasat6
 p:Antenna Hungária
@@ -1839,7 +1908,7 @@ p:FOXNWS,C:0000
 LTC
 p:Movistar+
 769b:00c00000:041e:0001:1:0
-BEINLALIGA4
+M. LaLiga 4
 p:Movistar+,C:0000
 019c:eeee0000:0004:22c7:1:0
 Cool
@@ -1851,7 +1920,7 @@ p:DIGITAL+,C:0000
 PORTADA
 p:DIGITAL+
 769c:00c00000:041e:0001:1:0
-M.Partidazo
+M. LaLiga 3
 p:CANAL+,C:0000
 019d:eeee0000:0004:22c7:1:0
 Ozone Network
@@ -1894,7 +1963,7 @@ BARÇA TV
 p:BARNA,C:0000
 74a1:00c00000:041c:0001:1:0
 EUROSPORT 1
-p:CANAL+,C:0000
+p:CANAL+,c:0000a8,c:010070,c:0300a8,C:0000
 74a2:00c00000:041c:0001:1:0
 MTV ESPAÑA
 p:DIGITAL+,C:0000
@@ -1923,13 +1992,13 @@ p:-
 
 p:Movistar+
 76a6:00c00000:041e:0001:1:0
-LaLiga123TVM3
-p:Movistar+,C:0000
+10788V SID 0x76a6
+p:DVB-S QPSK 10788V 19.2Â°E,C:0000
 33a7:00c00000:03eb:0001:1:0
 ATV2
 p:ATV,C:0000
 76a7:00c00000:041e:0001:1:0
-M. FÚTBOL 1
+TEST F1
 p:CANAL+,C:0000
 75a9:00c00000:0422:0001:1:0
 GUÍA
@@ -2091,8 +2160,8 @@ p:DIGITAL+
 Info na dlanu
 p:Harmonic
 76c5:00c00000:040e:0001:1:0
-LALIGA123TV
-p:Movistar+,C:0000
+LALIGATVBAR1
+p:Movistar,C:0000
 0bc6:eeee0000:0103:22b0:1:0
 Sve na dlanu
 p:Harmonic
@@ -2854,7 +2923,7 @@ WDR 4
 p:ARD WDR
 103f:00c00000:0451:0035:2:0
 NRJ
-p:M7 Group
+p:M7 Group,C:0000
 113f:00c00000:0404:0001:2:0
 RNE RADIO CLASICA
 p:RTVE
@@ -3396,7 +3465,7 @@ p:SES ASTRA,c:0019c9,c:0119d3,c:0319c9,c:050001
 Sky Cinema Comedy
 p:SKY,c:0003ff,c:010400,c:0303ff,c:050001,C:0000
 0009:00c00000:0003:0085:22:0
-Sky Cinema Johnson vs Statham
+Sky Cinema Action
 p:SKY,C:0000
 1009:00c00000:0451:0035:22:0
 Brazzers TV
@@ -3762,7 +3831,7 @@ p:BMT
 VICELAND
 p:CSAT,C:0000
 750f:00c00000:0420:0001:25:0
-BEIN LALIGA
+M. LaLiga HD
 p:Movistar+,C:0000
 1710:00c00000:0419:0001:25:0
 NIEDERBAYERN TV HD
@@ -4074,7 +4143,7 @@ p:Movistar+,C:0000
 BR Fernsehen Süd HD
 p:ARD
 7855:00c00000:041a:0001:25:0
-BEINLALIGA2
+M. LaLiga 2 HD
 p:Movistar+,C:0000
 2456:00c00000:0440:0001:25:0
 CINE+ PREMIER
@@ -4128,7 +4197,7 @@ p:CSAT,C:0000
 ALQUILER 2 HD
 p:Movistar+,C:0000
 785f:00c00000:041a:0001:25:0
-M.PartidazoHD
+M. LaLiga 3 HD
 p:CANAL+,C:0000
 1260:00c00000:03f7:0001:25:0
 3+
@@ -4320,7 +4389,7 @@ p:ARD
 Comedy Central HD
 p:MTV Networks,C:186d,C:186a,C:1860,C:1843,C:1842,C:1830
 0074:00c00000:0009:0085:25:0
-Sky Cinema Johnson vs Statham HD
+Sky Cinema Action HD
 p:SKY,c:0002ff,c:0302ff,c:040304,c:050001,C:0000
 2074:00c00000:0432:0001:25:0
 BEIN SPORTS MAX 10
@@ -4336,7 +4405,7 @@ SAT.1 HD
 p:ProSiebenSat.1,C:186d,C:186a,C:1860,C:1843,C:1842,C:1830
 0075:00c00000:000c:0085:25:0
 .
-p:SKY
+p:SKY,C:0000
 2075:00c00000:0432:0001:25:0
 RMC STORY
 p:CSAT,C:0000
@@ -4397,6 +4466,9 @@ p:BetaDigital,C:186d,C:186a,C:1860,C:1843,C:1842,C:1830
 427c:00c00000:0446:0001:25:0
 AUTOMOTO la chaine
 p:AB SAT,C:0500,C:0100
+007d:00c00000:0009:0085:25:0
+CNBC HD
+p:SKY
 017d:00c00000:0003:0085:25:0
 Sky Sport 12 HD
 p:SKY
@@ -4609,13 +4681,13 @@ INSIGHT TV HD
 p:SES ASTRA,C:186d,C:186a,C:1860,C:1843,C:1842,C:1830
 0093:00c00000:0002:0085:25:0
 Sky 1 HD
-p:SKY,C:0000
+p:SKY,c:0001ff,c:0301ff,c:040204,c:050001,C:0000
 1393:00c00000:03ea:0001:25:0
 INSIGHT TV HD INT
 p:SES ASTRA,C:0000
 1194:00c00000:0406:0001:25:0
 sportdigital HD
-p:SES,C:1867
+p:SES,c:0000ff,c:010101,c:0300ff,c:050001,C:1867
 2b98:00c00000:03f2:0001:25:0
 KiKA HD
 p:ZDFvision
@@ -4904,6 +4976,9 @@ p:Movistar+,C:0000
 30d7:00c00000:0413:0001:25:0
 Eurosport 2 HD Xtra
 p:SES ASTRA,c:0003ff,c:0303ff,c:040403,c:050001,C:186d,C:186a,C:1860,C:1843,C:1842,C:1830
+27d8:00c00000:03f6:0001:25:0
+.
+p:SES ASTRA
 74d8:00c00000:03f8:0001:25:0
 M.CineDoc&Roll
 p:Movistar+,C:0000
@@ -4968,7 +5043,7 @@ p:CSAT,C:0000
 flimmit Zusatzpaket
 p:ORF
 74ff:00c00000:0420:0001:25:0
-BEINLALIGA1
+M. LaLiga 1 HD
 p:Movistar+,C:0000
 0001:00c00000:040b:0001:31:0
 SES UHD Demo Channel
@@ -5481,4 +5556,4 @@ p:SKY
 EPG Nagraguide
 p:M7 Group
 end
-Edited on 09.08.2019 by : SplitThisList! ver.0.1.5 - http://www.krkadoni.com
+Edited on 15.09.2019 by : SplitThisList! ver.0.1.5 - http://www.krkadoni.com
