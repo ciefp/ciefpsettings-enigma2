@@ -97,17 +97,21 @@ init 4 && sleep 5 && init 3
 
 ---
 
+---
+
+##  **Support**
+
+- **GitHub Issues**: Report bugs or request features
+- **X (Twitter)**: [@ciefp](https://x.com/ciefp)
+- **Community**: Share configs, tips, feedback
 
 ---
 
-<div align="center">
+---
 
 **Maintained by @ciefp**  
 [GitHub](https://github.com/ciefp) • [X](https://x.com/ciefp)
 
 **Star the repo if you use these settings!**
-
-</div>
-```
 
 ---
