@@ -10,7 +10,7 @@
 ![Stars](https://img.shields.io/github/stars/ciefp/ciefpsettings-enigma2?style=for-the-badge)
 ![Legend](https://img.shields.io/badge/Legend-Since%202008-red.svg?style=for-the-badge)
 
-<img src="https://raw.githubusercontent.com/ciefp/ciefpsettings-enigma2/main/.github/banner.png" width="700" alt="Ciefp Settings – Since 2008"/>
+<img src="https://github.com/ciefp/ciefpsettings-enigma2/blob/master/logo.png" width="700" alt="Ciefp Settings – Since 2008"/>
 
 **First released: 04.12.2008 for Enigma1**  
 **Today: Used by OpenATV, OpenPLi, Pure2, OpenViX, OpenSPA, VTI, OpenBH, Egami & 100,000+ users**
