@@ -92,24 +92,15 @@ tar -xzf ciefp-E2-5sat-*.tar.gz -C /etc/enigma2/
 init 4 && sleep 5 && init 3
 
 
-
-| Settings | Satellites | Download |
-|---------|------------|----------|
-| [`ciefpsettings-enigma2`](https://github.com/ciefp/ciefpsettings-enigma2) | All-in-One 
-| [![Download](https://img.shields.io/badge/Download-Settings-blue.svg?style=for-the-badge&logo=github)](https://github.com/ciefp/ciefpsettings-enigma2/releases/latest) |
-
-
-
----
-
 > **All files are tested on OpenATV, OpenPLi, VTI, Pure2, OpenBH**  
 > **Includes**: `satellites.xml`, `lamedb`, `bouquets`, `userbouquet.*`
 
 ---
 
-<div align="center">
 
-**Maintained by @ciefp**  
+
+## Maintained by @ciefp 
+<div align="center">
 [GitHub](https://github.com/ciefp) • [X](https://x.com/ciefp)
 
 **Star the repo if you use these settings!**
