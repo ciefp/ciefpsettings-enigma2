@@ -98,11 +98,16 @@ init 4 && sleep 5 && init 3
 ---
 
 
+---
 
-## Maintained by @ciefp 
 <div align="center">
+
+**Maintained by @ciefp**  
 [GitHub](https://github.com/ciefp) • [X](https://x.com/ciefp)
 
 **Star the repo if you use these settings!**
 
 </div>
+```
+
+---
