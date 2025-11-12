@@ -4,7 +4,7 @@
 # Ciefp Enigma2 Settings  
 **Since 2008 – The Original & Most Trusted Satellite Settings**
 
-![Version](https://img.shields.io/badge/Version-2025.11.10-blue.svg?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-2025.11.01-blue.svg?style=for-the-badge)
 ![Enigma2](https://img.shields.io/badge/Enigma2-Official%20Since%202008-green.svg?style=for-the-badge)
 ![Downloads](https://img.shields.io/github/downloads/ciefp/ciefpsettings-enigma2/total?color=orange&style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/ciefp/ciefpsettings-enigma2?style=for-the-badge)
