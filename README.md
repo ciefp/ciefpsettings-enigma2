@@ -78,7 +78,7 @@
 | `ciefp-E2-motor-75E-34W` | **75°E → 34°W** | **Motorized** | [Download](https://github.com/ciefp/ciefpsettings-enigma2/releases/download/latest/ciefp-E2-motor-75E-34W.tar.gz) |
 
 ---
-
+<div align="center">
 ## How to Install
 
 ```bash
@@ -94,7 +94,7 @@ init 4 && sleep 5 && init 3
 
 > **All files are tested on OpenATV, OpenPLi, VTI, Pure2, OpenBH**  
 > **Includes**: `satellites.xml`, `lamedb`, `bouquets`, `userbouquet.*`
-
+</div>
 ---
 
 ---
