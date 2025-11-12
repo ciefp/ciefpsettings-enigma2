@@ -1,6 +1,4 @@
 
-
-```markdown
 <div align="center">
 
 # Ciefp Enigma2 Settings  
