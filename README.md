@@ -98,13 +98,15 @@ init 4 && sleep 5 && init 3
 ---
 
 ---
-
+<div align="center">
 ##  **Support**
 
+```bash
 - **GitHub Issues**: Report bugs or request features
 - **X (Twitter)**: [@ciefp](https://x.com/ciefp)
 - **Community**: Share configs, tips, feedback
 
+</div>
 ---
 
 ---
