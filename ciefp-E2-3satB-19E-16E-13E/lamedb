@@ -334,7 +334,7 @@ transponders
 	s 11595000:30000000:1:4:160:2:0:1:2:2:2
 /
 00a00000:75fc:016e
-	s 11678000:30000000:1:3:160:2:0:1:2:2:2
+	s 11678000:30000000:1:3:160:2:0:1:2:0:2
 /
 00a00000:76c0:016e
 	s 11055000:27500000:1:8:160:2:0:1:1:0:2
@@ -355,10 +355,10 @@ transponders
 	s 11324000:30000000:1:2:160:2:0:1:2:2:2
 /
 00a00000:9f60:016e
-	s 11366000:30000000:1:3:160:2:0:1:2:2:2
+	s 11366000:30000000:1:3:160:2:0:1:2:0:2
 /
 00a00000:9fc4:016e
-	s 11387000:32000000:0:3:160:2:0:1:2:2:2
+	s 11387000:32000000:0:3:160:2:0:1:2:0:2
 /
 00a00000:a028:016e
 	s 11429000:28330000:1:7:160:2:0:1:2:0:2
@@ -370,7 +370,7 @@ transponders
 	s 11471000:30000000:1:4:160:2:0:1:2:0:2
 /
 00a00000:c544:016e
-	s 11553750:30000000:0:3:160:2:0:1:2:2:2
+	s 11554000:30000000:0:3:160:2:0:1:2:0:2
 /
 00a00000:c5a8:016e
 	s 11554000:30000000:1:4:160:2:0:1:2:0:2
@@ -743,6 +743,21 @@ eeee0000:0004:22c7
 /
 eeee0000:0005:22c7
 	t 522000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee025a:0001:22c7
+	t 602000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0272:0f01:22b0
+	t 626000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee027a:0103:22b0
+	t 634000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee0282:0003:22c7
+	t 642000000:0:5:5:3:2:4:4:2:0:0:0
+/
+eeee02aa:0002:22c7
+	t 682000000:0:5:5:3:2:4:4:2:0:0:0
 /
 end
 services
@@ -2950,7 +2965,7 @@ kabel eins Doku
 p:ProSiebenSat.1,c:0009ff,c:0309ff,c:190069
 0066:00a00000:0003:0040:1:0
 24 Kitchen.
-p:T-HT,C:0000
+p:T-HT,c:001916,c:031916,c:050001,c:190210,C:1830,C:069b
 0066:00a00000:cb2b:016e:1:0
 Pink Super Kids
 p:pink,c:00025a,c:0102be,c:03025a,c:050001,c:19012e,C:0629,C:091f,C:0911,C:069f,f:11000
@@ -3004,7 +3019,7 @@ HA HA
 p:Pink,C:0000
 0067:00a00000:9f60:016e:1:0
 Arena Sport 1 HD
-p:Telekom Srbija,c:000407,c:030407,c:050001,c:190406,C:069f,C:091f,C:0911
+p:Telekom Srbija,c:000407,c:010409,c:030407,c:050001,c:190406,C:069f,C:091f,C:0911
 0367:00820000:3c28:013e:1:0
 CCTV 4E
 p:CCTV,c:000200,c:030200,c:050001,c:190100
@@ -3085,7 +3100,7 @@ Pink M
 p:Total TV,c:00025e,c:0102c2,c:03025e,c:050001,C:091f,C:0911,C:069f,C:0629
 006a:00a00000:9f60:016e:1:0
 Arena Sport 10 HD
-p:Telekom Srbija,c:000425,c:010426,c:030425,c:050001,c:190424,C:069f,C:091f,C:0911
+p:Telekom Srbija,c:000425,c:030425,c:190424,C:069f,C:091f,C:0911
 016a:00820000:1c84:013e:1:0
 The HISTORY Channel HD
 p:NOVA,c:000215,c:030215,c:190150,C:0604,C:0699
@@ -3115,7 +3130,7 @@ Kabelio Tele Zueri
 p:KABELIO.CH,c:00042f,c:03042f,c:050001,c:19006b,C:4afc
 006b:00a00000:9f60:016e:1:0
 Superstar TV HD
-p:Telekom Srbija,c:00042f,c:03042f,c:19042e,C:069f,C:091f,C:0911
+p:Telekom Srbija,c:00042f,c:010430,c:03042f,c:050001,c:19042e,C:069f,C:091f,C:0911
 016b:00820000:1c84:013e:1:0
 Kontra Channel
 p:NOVA,c:0001f4,c:0301f4,c:19010e,C:0604,C:0699
@@ -3169,7 +3184,7 @@ M+VAMOSBAR2
 p:Movistar+,c:000fdc,c:031554,c:19040a,C:1810
 006d:00a00000:9f60:016e:1:0
 Arena 1x2
-p:Telekom Srbija,c:000443,c:030443,c:190442,C:069f,C:091f,C:0911
+p:Telekom Srbija,c:000443,c:010444,c:030443,c:050001,c:190442,C:069f,C:091f,C:0911
 036d:00820000:3c28:013e:1:0
 CGTN A
 p:CCTV,c:000206,c:030206,c:190107
@@ -3259,7 +3274,7 @@ TEST TOROS
 p:Movistar+
 0071:00a00000:9f60:016e:1:0
 TV K1
-p:Telekom Srbija,c:00046b,c:03046b,c:19046a,C:069f,C:091f,C:0911
+p:Telekom Srbija,c:00046b,c:01046c,c:03046b,c:050001,c:19046a,C:069f,C:091f,C:0911
 0171:00820000:1c84:013e:1:0
 NOVALIFE Cy
 p:NOVA,c:00020b,c:03020b,c:190038,C:0604,C:0699
@@ -3367,7 +3382,7 @@ Novasportsextra3HD Cy
 p:NOVA,c:000211,c:030211,c:1900fb,C:0604,C:0699
 0678:00a00000:9fc4:016e:1:0
 Kino
-p:Total TV,c:000100,c:030100,c:050001,c:19009c,C:091f,C:0911,C:069f
+p:Total TV
 6f78:00c00000:0457:0001:1:0
 Astra Demo
 p:,c:001000,c:031000,c:190034
@@ -3382,7 +3397,7 @@ MAD T.V
 p:NOVA,c:000206,c:030206,c:190036,C:0604,C:0699
 0679:00a00000:9fc4:016e:1:0
 TV 3 Medias
-p:Total TV,c:000101,c:030101,c:050001,c:19009d,C:091f,C:0911,C:069f
+p:Total TV,c:000101,c:030101,c:19009d,C:091f,C:0911,C:069f
 3779:00820000:044c:013e:1:0
 CANAL+ FILM HD
 p:CANAL+
@@ -3403,7 +3418,7 @@ p:Telekom Srbija,c:0004c5,c:0304c5,c:1904c4,C:069f,C:091f,C:0911
 p:NOVA,c:0001e2,c:0301e2,c:190105,C:0604,C:0699
 067a:00a00000:9fc4:016e:1:0
 MRT 1
-p:Total TV,c:000102,c:030102,c:050001,c:19009e,C:091f,C:0911,C:069f
+p:Total TV,c:000102,c:030102,c:19009e,C:091f,C:0911,C:069f
 087a:00a0318a:0000:0001:1:0
 2170 Trojmiasto ESKA
 p:
@@ -4024,7 +4039,7 @@ p:
 p:,c:030f98,c:190f96
 1196:00a00000:a028:016e:1:0
 Arena Premium 5 HD
-p:Telekom Srbija,C:0000
+p:Telekom Srbija,c:0007e5,c:0307e5,c:050001,c:1907e4,C:069f,C:091f,C:0911
 1c96:00820000:1ce8:0071:1:0
 AXN
 p:Cyfrowy Polsat S.A.,c:000161,c:030161,c:19002a,C:1803,C:1861,C:186c
@@ -4051,7 +4066,7 @@ Novasports1HD
 p:NOVA,c:0000cc,c:0300cc,c:1902c2,C:0604,C:0699
 1197:00a00000:a028:016e:1:0
 Arena Sport 2 HD
-p:Telekom Srbija,c:0007ef,c:0307ef,c:1907ee,C:069f,C:091f,C:0911
+p:Telekom Srbija,c:0007ef,c:0307ef,c:050001,c:1907ee,C:069f,C:091f,C:0911
 1c97:00820000:1ce8:0071:1:0
 TV Okazje
 p:Cyfrowy Polsat S.A,c:000109,c:030109,c:190032
@@ -4084,7 +4099,7 @@ p:
 p:,c:03089a,c:190898
 1198:00a00000:a028:016e:1:0
 Arena Sport 5 HD
-p:Telekom Srbija,c:0007f9,c:0307f9,c:1907f8,C:069f,C:091f,C:0911
+p:Telekom Srbija
 3398:00820000:3390:0071:1:0
 Polsat Film HD
 p:Cyfrowy Polsat S.A.,c:000271,c:030271,c:190038,C:1861,C:1803,C:1813,C:06ed,C:0b01,C:0500,C:1884,C:186c,C:1870
@@ -4264,7 +4279,7 @@ p:iKOMG,c:0007d8,c:0307d8,c:1903f0
 p:
 11a0:00a00000:a028:016e:1:0
 Superstar 2 TV
-p:Telekom Srbija,c:000849,c:030849,c:190848,C:069f,C:091f,C:0911
+p:Telekom Srbija,c:000849,c:01084a,c:030849,c:050001,c:190848,C:091f,C:0911,C:069f
 3aa0:00820000:0514:013e:1:0
 CANAL+ SPORT 3 HD
 p:CANAL+,c:0000a7,c:0300a7,c:1903f0,C:1813,C:1884,C:0b01,C:0500
@@ -4450,7 +4465,7 @@ RTL 9
 p:AB Sat,c:000065,c:030065,c:190191,C:0500
 05ab:00a00000:75fc:016e:1:0
 Arena Premium 1
-p:Total TV,c:0000fb,c:010db7,c:0300fb,c:050001,c:190097,C:091f,C:0911,C:069f
+p:Total TV,c:0000fb,c:0300fb,c:050001,c:190097,C:091f,C:0911,C:069f
 06ab:00820000:3138:013e:1:0
 TVR
 p:GLOBECAST,c:0002d0,c:0302d0,c:1902bc
@@ -4474,7 +4489,7 @@ AB1
 p:AB Sat,c:000066,c:030066,c:190192,C:1819,C:0500,C:0100,C:181d
 05ac:00a00000:75fc:016e:1:0
 SK 2 HR
-p:Total TV,c:0000fc,c:010dc1,c:020228,c:0300fc,c:050001,c:190098,C:0b00,C:1830,C:069b,C:091f,C:0911,C:069f
+p:Total TV,c:0000fc,c:0300fc,c:050001,c:190098,C:0b00,C:1830,C:069b,C:091f,C:0911,C:069f
 06ac:00820000:3138:013e:1:0
 TVR PLUS
 p:GLOBECAST,c:000334,c:030334,c:190320
@@ -4524,7 +4539,7 @@ p:,c:0310b0,c:1910ae
 CHASSE ET PECHE
 p:AB Sat,c:000069,c:030069,c:190195,C:1819,C:0500,C:0100,C:181d
 05af:00a00000:75fc:016e:1:0
-HBO 2 HD
+Arena Sport 1
 p:Total TV,c:0000ff,c:0300ff,c:050001,c:19009b,C:091f,C:0911,C:069f
 0daf:00c00000:0004:0085:1:0
 SDMS Service 2
@@ -4591,7 +4606,7 @@ TOUTE L'HISTOIRE
 p:AB Sat,c:00006d,c:03006d,c:190199,C:1819,C:0500,C:0100,C:181d
 05b3:00a00000:75fc:016e:1:0
 TV Vijesti
-p:Total TV,c:000103,c:030103,c:050001,c:19009f,C:091f,C:0911,C:069f
+p:Total TV,c:000103,c:030103,c:19009f,C:091f,C:0911,C:069f
 1db3:00a00000:145c:0005:1:0
 PRO TV International
 p:PROTV
@@ -5194,7 +5209,7 @@ WRN English Europe - Hotbird
 p:GLOBECAST,c:0314bf,c:191518
 06da:00a00000:c544:016e:1:0
 B92
-p:Total TV,c:0000fe,c:010dd5,c:0300fe,c:050001,c:19009a,C:091f,C:0911,C:069f
+p:Total TV,c:0000fe,c:0300fe,c:050001,c:19009a,C:091f,C:0911,C:069f
 07da:00a0318a:0000:0001:1:0
 2010 Belchatow ESKA
 p:
@@ -5251,7 +5266,7 @@ TEST TÉCNICO
 p:DIGITAL+,c:031fff,c:190417
 05de:00a00000:4e84:016e:1:0
 Arena Sport Tenis HD
-p:Telekom Srbija,c:000bcd,c:030bcd,c:050001,c:190bcc,C:069f,C:091f,C:0911
+p:Telekom Srbija,c:000bcd,c:010bce,c:030bcd,c:050001,c:190bcc,C:091f,C:0911,C:069f
 06de:00a00000:c544:016e:1:0
 Prva CG
 p:Total TV,c:000102,c:030102,c:050001,c:19009e,C:091f,C:0911,C:069f
@@ -5269,10 +5284,10 @@ TEST_CSD1
 p:DIGITAL+,c:0000a3,c:0300a3,c:190418
 05df:00a00000:4e84:016e:1:0
 Arena Sport 3 HD
-p:Telekom Srbija,c:000bd7,c:030bd7,c:050001,c:190bd6,C:069f,C:091f,C:0911
+p:Telekom Srbija
 06df:00a00000:c544:016e:1:0
 Arena Premium 5
-p:Total TV,c:000103,c:030103,c:050001,c:19009f,C:091f,C:0911,C:069f
+p:Total TV,c:000103,c:030103,c:19009f,C:091f,C:0911,C:069f
 22df:00c00000:0434:0001:1:0
 F3 NOA
 p:CSAT,c:000a96,c:030a96,c:190a8c,C:1883,C:1863,C:0500
@@ -5284,7 +5299,7 @@ TEST_CSD2
 p:DIGITAL+,c:0000a3,c:0300a3,c:190419
 05e0:00a00000:4e84:016e:1:0
 Arena Sport 6 HD
-p:Telekom Srbija,c:000be1,c:030be1,c:050001,c:190be0,C:069f,C:091f,C:0911
+p:Telekom Srbija,c:000be1,c:030be1,c:190be0,C:069f,C:091f,C:0911
 07e0:00820000:22c4:013e:1:0
 BBC Brit
 p:GLOBECAST,c:00080d,c:03080d,c:050001,c:190871,C:1870,C:0b01,C:1884,C:0100,C:1803,C:1861,C:0500,C:06ed,C:186c,C:0614,C:1813
@@ -5332,7 +5347,7 @@ Premier League TV HD
 p:Telekom Srbija,c:000bf5,c:030bf5,c:190bf4,C:069f,C:091f,C:0911
 06e2:00a00000:c544:016e:1:0
 SK Golf
-p:Total TV,c:000106,c:030106,c:050001,c:1900a2,C:091f,C:0911,C:069f
+p:Total TV,c:000106,c:030106,c:1900a2,C:091f,C:0911,C:069f
 6ee2:00c00000:04b1:0001:1:0
 Astra Demo
 p:,c:001000,c:031000,c:190036
@@ -5344,7 +5359,7 @@ Blic TV HD
 p:Telekom Srbija,c:000bff,c:030bff,c:190bfe,C:069f,C:091f,C:0911
 06e3:00a00000:c544:016e:1:0
 Prva World
-p:Total TV,c:000107,c:030107,c:050001,c:1900a3,C:091f,C:0911,C:069f
+p:Total TV,c:000107,c:030107,c:1900a3,C:091f,C:0911,C:069f
 07e3:00820000:22c4:013e:1:0
 BBC CBeebies
 p:GLOBECAST,c:00082b,c:03082b,c:19088e,C:1870,C:0b01,C:1884,C:1803,C:1861,C:0500,C:06ed,C:186c,C:0614,C:0100,C:1813
@@ -5395,7 +5410,7 @@ Euronews Srbija
 p:Telekom Srbija,c:000c1d,c:030c1d,c:190c1c,C:069f,C:091f,C:0911
 06e6:00a00000:c544:016e:1:0
 Grand
-p:Total TV,c:00010a,c:03010a,c:050001,c:1900a6,C:091f,C:0911,C:069f
+p:Total TV,c:00010a,c:03010a,c:1900a6,C:091f,C:0911,C:069f
 07e6:00820000:22c4:013e:1:0
 BBC Brit
 p:GLOBECAST,c:00080d,c:03080d,c:1908ac,C:1870,C:0b01,C:1884,C:0100,C:1803,C:1861,C:0500,C:06ed,C:186c,C:0614
@@ -5560,7 +5575,7 @@ Ird ALI
 p:VIVACOM,c:031fff,c:190022
 05f3:00a00000:4e84:016e:1:0
 RTS Nauka
-p:Telekom Srbija,c:000c9f,c:010ca0,c:030c9f,c:050001,c:190c9e,C:069f,C:091f,C:0911
+p:Telekom Srbija,c:000c9f,c:030c9f,c:190c9e,C:069f,C:091f,C:0911
 13f3:00820000:05dc:013e:1:0
 Eleven Sports 1 HD
 p:CANAL+,c:0000a6,c:0300a6,c:050001,c:1903ef,C:0100,C:1813,C:1884,C:0b01,C:0500,C:1803,C:1861,C:186c,C:1870,C:06ed
@@ -6283,7 +6298,7 @@ Radio Mariam Armenia
 p:Eutelsat
 0d53:00a00000:c738:016e:2:0
 HRT-HR1
-p:OIV
+p:OIV,c:0300d4,c:1900d2
 1c53:00820000:1c20:013e:2:0
 R Tunisie Internatio
 p:,c:030075,c:190055
@@ -6301,7 +6316,7 @@ N-JOY Sofia
 p:VIVACOM,c:030110,c:190111
 0d54:00a00000:c738:016e:2:0
 HRT-HR2
-p:OIV
+p:OIV,c:0300de,c:1900dc
 2154:00820000:3070:013e:2:0
 Rai Radio 1 L'Ora della Venezia Giulia
 p:RAI,c:0302a0,c:19046c
@@ -6319,7 +6334,7 @@ Z-Rock
 p:VIVACOM,c:030112,c:190113
 0d55:00a00000:c738:016e:2:0
 HRT-HR3
-p:OIV
+p:OIV,c:0300e8,c:1900e6
 2155:00820000:3070:013e:2:0
 Rai Radio 1 Sport
 p:RAI,c:0302a1,c:19046d
@@ -6358,7 +6373,7 @@ Darik Ruse
 p:VIVACOM,c:030084,c:190085
 0d58:00a00000:c738:016e:2:0
 HKR
-p:OIV
+p:OIV,c:030106,c:190104
 1b58:00a031bb:0001:0000:2:0
 12731H SID 0x1b58
 p:DVB-S2 8PSK 12731H 16.0°E,f:10000
@@ -7495,7 +7510,7 @@ p:,c:031fff,c:191838
 p:DVB-S2 8PSK 10906V 19.2°E,c:031fff,c:190407
 1839:00a00000:c544:016e:12:0
 
-p:,c:031fff,c:191839
+p:
 183a:00a00000:c544:016e:12:0
 
 p:,c:031fff,c:19183a
@@ -7531,7 +7546,7 @@ p:,c:031fff,c:191770
 p:,c:031fff,c:191771
 1772:00a00000:c544:016e:12:0
 
-p:,c:031fff,c:191772
+p:
 7476:00c00000:03f0:0001:12:0
 11317V SID 0x7476
 p:DVB-S QPSK 11317V 19.2°E,c:031fff,c:190406
@@ -7604,6 +7619,9 @@ p:DVB-S QPSK 12363V 19.2°E,c:030776,c:190506
 0fa1:00c00000:0007:0085:12:0
 12148H SID 0xfa1
 p:DVB-S QPSK 12148H 19.2°E,c:031fff,c:190089
+0fa1:00a0ac89:0190:0000:12:0
+11401V SID 0xfa1
+p:DVB-S2 8PSK 11401V 16.0°E,c:031fff,c:191000,f:40
 0fa1:00a0ac8a:0190:0000:12:0
 11402V SID 0xfa1
 p:DVB-S2 8PSK 11402V 16.0°E,c:031fff,c:191000
@@ -7975,7 +7993,7 @@ Bang Bang
 p:DigitALB,c:000411,c:030411,c:050001,c:190410,C:0b00
 0712:00a00000:c5a8:016e:22:0
 Hustler TV
-p:A1 HR,c:0007d1,c:0107d2,c:0307d1,c:050001,c:1907d0,C:0b00,C:1830,C:069b
+p:A1 HR,c:0007d1,c:0307d1,c:050001,c:1907d0,C:0b00,C:1830,C:069b
 1013:00c00000:0451:0035:22:0
 Bergblick
 p:M7 Group,c:000267,c:030267,c:050001,c:1908a7,C:0100,C:0500,C:1817,C:0648,C:0650,C:0624
@@ -7999,7 +8017,7 @@ Fax News
 p:DigitALB,c:000317,c:030317,c:050001,c:190316,C:0b00
 0716:00a00000:c5a8:016e:22:0
 Arena Fight
-p:A1 HR,c:000961,c:030961,c:050001,c:190960,C:0b00,C:091f,C:0911,C:069f
+p:A1 HR,c:000961,c:010962,c:030961,c:050001,c:190960,C:0b00,C:091f,C:0911,C:069f
 0717:00a00000:c5a8:016e:22:0
 DIVA
 p:A1 HR,c:0009c5,c:0309c5,c:050001,c:190a02,C:0b00
@@ -8131,7 +8149,7 @@ CI Network
 p:VIVACOM,c:000c82,c:030c82,c:050001,c:190c1e,C:09bd,C:06e1,C:1878,C:1ec0
 072e:00a00000:c5a8:016e:22:0
 MTV Adria
-p:A1 HR,c:0012c2,c:0112c1,c:0312c2,c:050001,c:0912ea0202,c:1912c0,C:0b00,C:069f
+p:A1 HR,c:0012c2,c:0312c2,c:050001,c:1912c0,C:0b00,C:069f
 0a2e:00a00000:427e:016e:22:0
 PRO ARENA
 p:PROTV
@@ -8246,9 +8264,6 @@ p:VIVACOM,c:000c8c,c:030c8c,c:050001,c:190c28,C:09bd,C:06e1,C:1878,C:1ec0
 0438:00a00000:4f4c:016e:22:0
 Syri TV
 p:DigitALB,c:000439,c:030439,c:050001,c:190438,C:0b00
-0738:00a00000:c5a8:016e:22:0
-E!
-p:A1 HR,C:0000
 3338:00c00000:045b:0001:22:0
 4MEDIATHEK
 p:MIT-xperts GmbH,c:000848,c:030848,c:1904bc
@@ -8680,7 +8695,7 @@ AXN Adria
 p:A1 Broadcasting,C:0000
 007c:00a00000:0003:0040:22:0
 DJazz.tv.
-p:T-HT,c:000b0f,c:030b0f,c:19020c,C:1830,C:069b
+p:T-HT,c:000b0f,c:030b0f,c:050001,c:19020c,C:1830,C:069b
 077d:00a00000:c6d4:016e:22:0
 Barely Legal
 p:A1 Broadcasting,c:000a8d,c:010a8e,c:030a8d,c:050001,c:190a8c,C:0b00
@@ -8764,7 +8779,7 @@ Reality Kings TV
 p:A1 Broadcasting,c:000ce5,c:010ce6,c:030ce5,c:050001,C:0b00,C:091f,C:0911,C:069f
 0084:00a00000:0003:0040:22:0
 ADRIA MUSIC TELEVISION.
-p:T-HT,c:000bf5,c:030bf5,c:190026
+p:T-HT,c:000bf5,c:030bf5,c:050001,c:190026
 0884:00a00000:5014:016e:22:0
 RTSH Sport
 p:DigitALB,c:000885,c:010886,c:030885,c:050001,c:190884,C:0b00
@@ -8847,7 +8862,7 @@ p:VIVACOM,c:0004e0,c:0304e0,c:050001,c:19047c,C:09bd,C:06e1,C:1878,C:1ec0
 Cartoon Network
 p:SKY,c:0006ff,c:0306ff,c:190066,C:098c,C:098d,C:09f0
 0a94:00a00000:9dd0:016e:22:0
-FilmBox Arthouse
+FILMBOX+ Festival
 p:A1 Broadcasting,c:000709,c:030709,c:050001,c:190708,C:0b00,C:091f,C:0911,C:069f
 1394:00820000:2710:00d5:22:0
 English Club
@@ -8856,8 +8871,8 @@ p:VIVACOM,c:0013f8,c:0313f8,c:050001,c:191394,C:09bd,C:06e1,C:1878,C:1ec0
 Super Toons
 p:VIVACOM,c:0004e1,c:0304e1,c:050001,c:19047d,C:09bd,C:06e1,C:1878,C:1ec0
 0a95:00a00000:9dd0:016e:22:0
-FilmBox Stars
-p:A1 Broadcasting,c:00076d,c:03076d,c:050001,c:1907ab,C:0b00,C:091f,C:0911,C:069f
+FILMBOX+ Love & Crime
+p:A1 Broadcasting,c:00076d,c:01076e,c:03076d,c:050001,c:097980404,c:1907ab,C:0b00,C:091f,C:0911,C:069f
 0096:00a00000:0001:0040:22:0
 Jugoton TV.
 p:T-HT,c:000b26,c:030b26,c:190225,C:1830,C:0b00,C:069b
@@ -8899,7 +8914,7 @@ TVCG MNE.
 p:T-HT
 0a9b:00a00000:9dd0:016e:22:0
 EroX
-p:A1 Broadcasting,c:0009c5,c:0109c6,c:0309c5,c:050001,c:1909c4,C:0b00,C:091f,C:0911,C:069f
+p:A1 Broadcasting,c:0009c5,c:0309c5,c:050001,c:1909c4,C:0b00,C:091f,C:0911,C:069f
 139b:00820000:2710:00d5:22:0
 Фен Фолк
 p:VIVACOM,c:0013ff,c:0313ff,c:050001,c:19139b
@@ -8941,7 +8956,7 @@ KTV
 p:iKOMG,c:0007d9,c:0307d9,c:1903f1
 0aa1:00a00000:9dd0:016e:22:0
 FashionBox
-p:A1 Broadcasting,c:0006a5,c:0106a6,c:0306a5,c:050001,c:1906a4,C:0b00,C:091f,C:0911,C:069f
+p:A1 Broadcasting,c:0006a5,c:0306a5,c:1906a4,C:0b00,C:091f,C:0911,C:069f
 13a1:00820000:2710:00d5:22:0
 Hitmix
 p:VIVACOM,c:001405,c:031405,c:050001,c:1913a1,C:06e1,C:1878,C:1ec0,C:09bd
@@ -8949,7 +8964,7 @@ p:VIVACOM,c:001405,c:031405,c:050001,c:1913a1,C:06e1,C:1878,C:1ec0,C:09bd
 RTSH 1
 p:DigitALB,c:0008a3,c:0308a3,c:1908a2,C:0b00
 0aa3:00a00000:9dd0:016e:22:0
-FilmBox Baltic
+FILMBOX+ One
 p:A1 Broadcasting,c:000c1d,c:030c1d,c:190c1c,C:0b00
 13a3:00820000:2710:00d5:22:0
 WNESS TV
@@ -8970,13 +8985,13 @@ p:T-HT
 Antena 3
 p:VIVACOM,c:00140a,c:03140a,c:050001,c:1913a6,C:09bd,C:06e1,C:1878,C:1ec0
 0aa7:00a00000:9dd0:016e:22:0
-FilmBox Stars
+FILMBOX+ Love & Crime
 p:A1 Broadcasting,c:00076d,c:03076d,c:1907ac,C:0b00
 00a8:00c00000:000b:0085:22:0
 Motorvision+
 p:SKY,c:0003ff,c:0303ff,c:050001,c:190063,C:098c,C:098d,C:09f0
 0aa8:00a00000:9dd0:016e:22:0
-FilmBox Extra HD
+FILMBOX+ Emotion HD
 p:A1 Broadcasting,c:0007d1,c:0307d1,c:190810,C:0b00
 13a8:00820000:2710:00d5:22:0
 Private TV
@@ -9049,7 +9064,7 @@ ntv Austria
 p:RTL,c:0002bc,c:0302bc,c:190038
 00bf:00a00000:0003:0040:22:0
 BlueHustler.
-p:T-HT,c:000b2c,c:010a2c,c:030b2c,c:050001,c:19022b,C:1830,C:091f,C:0911,C:069f,C:069b
+p:T-HT,c:000b2c,c:010a2c,c:030b2c,c:050001,c:19022b,C:1830,C:069b,C:091f,C:0911,C:069f
 00c0:00a00000:0002:0040:22:0
 RTL Crime.
 p:T-HT,c:000b01,c:010a01,c:030b01,c:050001,c:190200,C:1830,C:069b
@@ -9457,7 +9472,7 @@ M+ LALIGA HD
 p:Movistar+,c:0000a7,c:0300a7,c:050001,c:19040e,C:1810
 0710:00a00000:c5a8:016e:25:0
 Arena Sport 2 HD
-p:A1 HR,c:000709,c:01070a,c:030709,c:050001,c:190708,C:0b00,C:1830,C:069b,C:091f,C:0911,C:069f
+p:A1 HR,c:000709,c:030709,c:050001,c:190708,C:0b00,C:1830,C:069b,C:091f,C:0911,C:069f
 2b10:00820000:1900:fbff:25:0
 Sky Sport Arena
 p:SkyItalia,c:0000a2,c:0300a2,c:050001,c:190457,C:09cd
@@ -9493,7 +9508,7 @@ BEIN SPORTS 3
 p:CSAT,c:000456,c:030456,c:050001,c:19044c,C:1883,C:1863,C:0500
 0714:00a00000:c5a8:016e:25:0
 HTV3 HD
-p:A1 HR,c:000899,c:030899,c:050001,c:190898,C:0b00,C:1830,C:069b,C:091f,C:0911,C:069f
+p:A1 HR,c:000899,c:01089a,c:0208b7,c:030899,c:050001,c:190898,C:1830,C:0b00,C:091f,C:0911,C:069f,C:069b
 1414:00a00000:51a4:016e:25:0
 TEST 2
 p:DigitALB,c:001415,c:031415,c:191414,C:0b00
@@ -9556,7 +9571,7 @@ VOXup HD
 p:CBC,c:0007ff,c:0307ff,c:050001,c:190067,C:1830,C:1843,C:1860,C:098c,C:186a,C:186d,C:098d,C:1842,C:4b64,C:4af4,C:09f0
 0718:00a00000:c5a8:016e:25:0
 Arena Sport 4 HD
-p:A1 HR,c:000a29,c:010a2a,c:030a29,c:050001,c:190a28,C:0b00,C:1830,C:069b,C:091f,C:0911,C:069f
+p:A1 HR,c:000a29,c:030a29,c:050001,c:190a28,C:0b00,C:1830,C:069b,C:091f,C:0911,C:069f
 1018:00820000:1a90:fbff:25:0
 cielo
 p:SkyItalia,c:0000ac,c:0300ac,c:050001,c:1903f9,C:0919,C:093b,C:09cd,C:183d,C:183e,C:1856
@@ -11067,7 +11082,7 @@ p:ProSiebenSat.1,c:0004ff,c:0304ff,c:190084,C:098c,C:0500,C:06e2,C:098d,C:09f0
 Sky Sport Mix
 p:SKY,c:0000ff,c:0300ff,c:190060,C:098d,C:098c,C:09f0
 0a8d:00a00000:9dd0:016e:25:0
-FilmBox Premium HD
+FILMBOX+ Hits HD
 p:A1 Broadcasting,c:00044d,c:03044d,c:050001,c:19044c,C:0b00,C:091f,C:0911,C:069f
 258d:00c00000:0448:0001:25:0
 VIXEN
@@ -11129,9 +11144,6 @@ p:,c:00008c,c:03008c,c:190348,C:1819,C:0500,C:1883,C:1863,C:181d,C:1818,C:0100
 0091:00c00000:0004:0085:25:0
 Sky Sport Premier League
 p:SKY,c:000eff,c:030eff,c:050001,c:19006e,C:098c,C:098d,C:09f0
-0a91:00a00000:9dd0:016e:25:0
-Gametoon HD
-p:Digitalb,c:000d49,c:030d49,c:050001,c:190d8b,C:0b00
 2591:00c00000:0448:0001:25:0
 LA CHAINE METEO
 p:CSAT,c:0006ae,c:0306ae,c:1906a4,C:1883,C:1863
@@ -11181,7 +11193,7 @@ p:A1 HR,c:001451,c:031451,c:041465,c:050001,c:09147b0202,c:191450,C:0b00,C:091f,
 HBO 3 HD
 p:A1 HR
 0a96:00a00000:9dd0:016e:25:0
-FilmBox Extra HD
+FILMBOX+ Emotion HD
 p:A1 Broadcasting,c:0007d1,c:0307d1,c:050001,c:19080e,C:0b00,C:091f,C:0911,C:069f
 2896:00c00000:040f:0001:25:0
 ARD-Test-R
@@ -11218,7 +11230,7 @@ Cinemax HD
 p:A1 Broadcasting
 0a9a:00a00000:9dd0:016e:25:0
 EroXXX HD
-p:A1 Broadcasting,c:000961,c:010962,c:030961,c:050001,c:190960,C:0b00,C:091f,C:0911,C:069f
+p:A1 Broadcasting,c:000961,c:030961,c:050001,c:190960,C:0b00,C:091f,C:0911,C:069f
 749a:00c00000:041c:0001:25:0
 Movistar Plus HD
 p:Movistar+,c:0000a0,c:0300a0,c:050001,c:190400,C:1810
@@ -11231,9 +11243,6 @@ p:Movistar+,c:0000a1,c:0300a1,c:050001,c:190401,C:1810
 019c:00a00000:0003:0040:25:0
 Arena Sport 1 HD.
 p:T-HT,c:000b1b,c:010a1b,c:030b1b,c:050001,c:19021a,C:1830,C:0b00,C:069b,C:0911,C:091f,C:069f
-0a9c:00a00000:9dd0:016e:25:0
-360 TuneBox HD
-p:Digitalb,c:0005dd,c:0305dd,c:050001,c:190619,C:0b00
 139c:00a00000:4f4c:016e:25:0
 Dorcel TV HD
 p:DigitALB,c:00139d,c:03139d,c:19139c,C:0b00
@@ -11319,7 +11328,7 @@ p:BMT,c:0003fc,c:0303fc,c:050001,c:190066
 Sky Crime
 p:SkyItalia,c:0000a1,c:0300a1,c:19044d,C:09cd
 0aaa:00a00000:9dd0:016e:25:0
-FilmBox Premium HD
+FILMBOX+ Hits HD
 p:Digitalb,c:00044d,c:03044d,c:190488,C:0b00
 14aa:00a00000:51a4:016e:25:0
 Tring Sport 4 HD
@@ -12688,583 +12697,631 @@ Fusion FGDL
 p:SkyItalia,c:031fff,c:19005f
 0200:eeee0000:0005:22c7:1:0
 Jazz Tv
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:001401,c:031401,c:050007,c:191400,C:0b00,C:0bc1
 0201:eeee0000:0005:22c7:1:0
 EWTN Bonum TV
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:00140b,c:03140b,c:050007,c:19140a,C:0b00,C:0bc1
 0202:eeee0000:0005:22c7:1:0
 TV2 Sef
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:001415,c:031415,c:050007,c:191414,C:0b00,C:0bc1
 0203:eeee0000:0005:22c7:1:0
 SuperOne
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:00141f,c:03141f,c:050007,c:19141e,C:0b00,C:0bc1
 0205:eeee0000:0005:22c7:1:0
 Heti TV
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:001433,c:031433,c:050007,c:191432,C:0b00,C:0bc1
 0206:eeee0000:0005:22c7:1:0
 Apostol TV
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:00143d,c:03143d,c:050007,c:19143c,C:0b00,C:0bc1
 0207:eeee0000:0005:22c7:1:0
 PAX TV
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.
 0208:eeee0000:0005:22c7:1:0
 Nick Junior
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:001451,c:031451,c:191450,C:0b00,C:0bc1
 0209:eeee0000:0005:22c7:1:0
 Magyar Mozi TV
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:00145b,c:03145b,c:19145a,C:0b00,C:0bc1
 020a:eeee0000:0005:22c7:1:0
 Jim Jam
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:001465,c:031465,c:191464,C:0b00,C:0bc1
 020c:eeee0000:0005:22c7:1:0
 HEVC teszt
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:001479,c:031479,c:191478
 012c:eeee0000:0003:22c7:1:0
 AXN
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000bb9,c:030bb9,c:050007,c:190bb8,C:0b00,C:0bc1
+012c:eeee0282:0003:22c7:1:0
+AXN
+p:One Magyarorszag Zrt.,c:000bb9,c:030bb9,c:050007,c:190bb8,C:0b00,C:0bc1
 012d:eeee0000:0003:22c7:1:0
 Viasat 3
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000bc3,c:030bc3,c:050007,c:190bc2,C:0b00,C:0bc1
+012d:eeee0282:0003:22c7:1:0
+Viasat 3
+p:One Magyarorszag Zrt.,c:000bc3,c:030bc3,c:050007,c:190bc2,C:0b00,C:0bc1
 012e:eeee0000:0003:22c7:1:0
 RTL HAROM
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000bcd,c:030bcd,c:050007,c:190bcc,C:0b00,C:0bc1
+012e:eeee0282:0003:22c7:1:0
+RTL HAROM
+p:One Magyarorszag Zrt.,c:000bcd,c:030bcd,c:050007,c:190bcc,C:0b00,C:0bc1
 012f:eeee0000:0003:22c7:1:0
 PRIME
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000bd7,c:030bd7,c:050007,c:190bd6,C:0b00,C:0bc1
+012f:eeee0282:0003:22c7:1:0
+PRIME
+p:One Magyarorszag Zrt.,c:000bd7,c:030bd7,c:050007,c:190bd6,C:0b00,C:0bc1
 0130:eeee0000:0003:22c7:1:0
 Moziverzum
-p:AH Media Zrt.,C:0000
-0131:eeee0000:0003:22c7:1:0
-Comedy Central
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000be1,c:030be1,c:050007,c:190be0,C:0b00,C:0bc1
+0130:eeee0282:0003:22c7:1:0
+Moziverzum
+p:One Magyarorszag Zrt.,c:000be1,c:030be1,c:050007,c:190be0,C:0b00,C:0bc1
 0132:eeee0000:0003:22c7:1:0
 Nickelodeon
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000bf5,c:030bf5,c:050007,c:190bf4,C:0b00,C:0bc1
+0132:eeee0282:0003:22c7:1:0
+Nickelodeon
+p:One Magyarorszag Zrt.,c:000bf5,c:030bf5,c:050007,c:190bf4,C:0b00,C:0bc1
 0133:eeee0000:0003:22c7:1:0
 Nicktoons
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000bff,c:030bff,c:050007,c:190bfe,C:0b00,C:0bc1
+0133:eeee0282:0003:22c7:1:0
+Nicktoons
+p:One Magyarorszag Zrt.,c:000bff,c:030bff,c:050007,c:190bfe,C:0b00,C:0bc1
 0134:eeee0000:0003:22c7:1:0
 National Geographic
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000c09,c:030c09,c:050007,c:190c08,C:0b00,C:0bc1
+0134:eeee0282:0003:22c7:1:0
+National Geographic
+p:One Magyarorszag Zrt.,c:000c09,c:030c09,c:050007,c:190c08,C:0b00,C:0bc1
 0135:eeee0000:0003:22c7:1:0
 Life TV
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000c13,c:030c13,c:050007,c:190c12,C:0b00,C:0bc1
+0135:eeee0282:0003:22c7:1:0
+Life TV
+p:One Magyarorszag Zrt.,c:000c13,c:030c13,c:050007,c:190c12,C:0b00,C:0bc1
 0136:eeee0000:0003:22c7:1:0
 Hir TV
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000c1d,c:030c1d,c:050007,c:190c1c,C:0b00,C:0bc1
+0136:eeee0282:0003:22c7:1:0
+Hir TV
+p:One Magyarorszag Zrt.,c:000c1d,c:030c1d,c:050007,c:190c1c,C:0b00,C:0bc1
 0137:eeee0000:0003:22c7:1:0
 Mozi+ HD
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.
+0137:eeee0282:0003:22c7:1:0
+Mozi+ HD
+p:One Magyarorszag Zrt.,c:000c27,c:030c27,c:050007,c:190c26,C:0b00,C:0bc1
 0138:eeee0000:0003:22c7:1:0
 Spektrum
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000c31,c:030c31,c:190c30,C:0b00,C:0bc1
+0138:eeee0282:0003:22c7:1:0
+Spektrum
+p:One Magyarorszag Zrt.,c:000c31,c:030c31,c:050007,c:190c30,C:0b00,C:0bc1
 0139:eeee0000:0003:22c7:1:0
 ATV
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000c3b,c:030c3b,c:190c3a,C:0b00,C:0bc1
+0139:eeee0282:0003:22c7:1:0
+ATV
+p:One Magyarorszag Zrt.,c:000c3b,c:030c3b,c:050007,c:190c3a,C:0b00,C:0bc1
 013a:eeee0000:0003:22c7:1:0
 Story4
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000c45,c:030c45,c:190c44,C:0b00,C:0bc1
+013a:eeee0282:0003:22c7:1:0
+Story4
+p:One Magyarorszag Zrt.,c:000c45,c:030c45,c:050007,c:190c44,C:0b00,C:0bc1
 013b:eeee0000:0003:22c7:1:0
 Arena 4 HD
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000c4f,c:030c4f,c:190c4e,C:0b00,C:0bc1
+013b:eeee0282:0003:22c7:1:0
+Arena 4 HD
+p:One Magyarorszag Zrt.
 013c:eeee0000:0003:22c7:1:0
 Sorozat+
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000c59,c:030c59,c:190c58,C:0b00,C:0bc1
+013c:eeee0282:0003:22c7:1:0
+Sorozat+
+p:One Magyarorszag Zrt.,c:000c59,c:030c59,c:190c58,C:0b00,C:0bc1
 013d:eeee0000:0003:22c7:1:0
 Film Cafe
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:000c63,c:030c63,c:190c62,C:0b00,C:0bc1
+013d:eeee0282:0003:22c7:1:0
+Film Cafe
+p:One Magyarorszag Zrt.,c:000c63,c:030c63,c:190c62,C:0b00,C:0bc1
 0190:eeee0000:0004:22c7:1:0
 Film+
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000fa1,c:030fa1,c:050007,c:190fa0,C:0b00,C:0bc1
 0192:eeee0000:0004:22c7:1:0
 Spiler 1 HD
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000fb5,c:030fb5,c:050007,c:190fb4,C:0b00,C:0bc1
 0193:eeee0000:0004:22c7:1:0
 RTL KETTO
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000fbf,c:030fbf,c:050007,c:190fbe,C:0b00,C:0bc1
 0194:eeee0000:0004:22c7:1:0
 Super TV2
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000fc9,c:030fc9,c:050007,c:190fc8,C:0b00,C:0bc1
 0195:eeee0000:0004:22c7:1:0
 TV2 Kids
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000fd3,c:030fd3,c:050007,c:190fd2,C:0b00,C:0bc1
 0196:eeee0000:0004:22c7:1:0
 Disney Channel
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000fdd,c:030fdd,c:050007,c:190fdc,C:0b00,C:0bc1
 0197:eeee0000:0004:22c7:1:0
 AMC HD
-p:AH Media Zrt.,C:0000
-0198:eeee0000:0004:22c7:1:0
-Paramount Network
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:000fe7,c:030fe7,c:050007,c:190fe6,C:0b00,C:0bc1
 0199:eeee0000:0004:22c7:1:0
 Discovery Channel
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.
 019a:eeee0000:0004:22c7:1:0
 TV2 Comedy
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:001005,c:031005,c:191004,C:0b00,C:0bc1
 019b:eeee0000:0004:22c7:1:0
 Jocky TV
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:00100f,c:03100f,c:19100e,C:0b00,C:0bc1
 019c:eeee0000:0004:22c7:1:0
 Cool HD
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:001019,c:031019,c:191018,C:0b00,C:0bc1
 019d:eeee0000:0004:22c7:1:0
 Ozone Network
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:001023,c:031023,c:191022,C:0b00,C:0bc1
 019e:eeee0000:0004:22c7:1:0
 TV4
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:00102d,c:03102d,c:19102c,C:0b00,C:0bc1
 019f:eeee0000:0004:22c7:1:0
 Sport 1 HD
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:001037,c:031037,c:191036,C:0b00,C:0bc1
 01a0:eeee0000:0004:22c7:1:0
 TV Paprika
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:001041,c:031041,c:191040,C:0b00,C:0bc1
 0bb9:eeee0000:0103:22b0:1:0
 Antena PLUS INFO
-p:Telekom Srbija,c:000bc3,c:010bc4,c:030bc3,c:050001
+p:Telekom Srbija,c:000bc3,c:030bc3,c:050001,c:190bc2
+0bb9:eeee027a:0103:22b0:1:0
+Antena PLUS INFO
+p:Telekom Srbija,c:000bc3,c:030bc3,c:050001,c:190bc2
 0bba:eeee0000:0103:22b0:1:0
 Arena sport 1
-p:Harmonic,C:0000
+p:Harmonic,c:000bcd,c:030bcd,c:050001,c:190bcc,C:0b00
+0bba:eeee027a:0103:22b0:1:0
+Arena sport 1
+p:Harmonic,c:000bcd,c:030bcd,c:050001,c:190bcc,C:0b00
 0bbb:eeee0000:0103:22b0:1:0
+SUPERSTAR TV
+p:Harmonic,c:000bd7,c:030bd7,c:050001,c:190bd6,C:0b00
+0bbb:eeee027a:0103:22b0:1:0
 SUPERSTAR TV
 p:Harmonic
 0bbc:eeee0000:0103:22b0:1:0
 SUPERSTAR 2
-p:Harmonic
+p:Harmonic,c:000be1,c:030be1,c:050001,c:190be0,C:0b00
+0bbc:eeee027a:0103:22b0:1:0
+SUPERSTAR 2
+p:Harmonic,c:000be1,c:030be1,c:190be0,C:0b00
 0bbd:eeee0000:0103:22b0:1:0
 SUPERSTAR 3
-p:Harmonic
+p:Harmonic,c:000beb,c:030beb,c:050001,c:190bea,C:0b00
+0bbd:eeee027a:0103:22b0:1:0
+SUPERSTAR 3
+p:Harmonic,c:000beb,c:030beb,c:190bea,C:0b00
 0bbe:eeee0000:0103:22b0:1:0
 K1
 p:Harmonic
+0bbe:eeee027a:0103:22b0:1:0
+K1
+p:Harmonic,c:000bf5,c:030bf5,c:190bf4,C:0b00
 0bbf:eeee0000:0103:22b0:1:0
 Kurir TV
-p:Harmonic
+p:Harmonic,c:000bff,c:030bff,c:190bfe,C:0b00
+0bbf:eeee027a:0103:22b0:1:0
+Kurir TV
+p:Harmonic,c:000bff,c:030bff,c:190bfe,C:0b00
 0bc0:eeee0000:0103:22b0:1:0
 Informer TV
-p:Harmonic
+p:Harmonic,c:000c09,c:030c09,c:190c08,C:0b00
+0bc0:eeee027a:0103:22b0:1:0
+Informer TV
+p:Harmonic,c:000c09,c:030c09,c:190c08,C:0b00
 0bc1:eeee0000:0103:22b0:1:0
 Euronews Srbija
-p:Harmonic
+p:Harmonic,c:000c13,c:030c13,c:190c12,C:0b00
+0bc1:eeee027a:0103:22b0:1:0
+Euronews Srbija
+p:Harmonic,c:000c13,c:030c13,c:190c12,C:0b00
 0bc2:eeee0000:0103:22b0:1:0
 Vesti
-p:mts Antena
+p:mts Antena,c:000c1d,c:030c1d,c:190c1c,C:0b00
+0bc2:eeee027a:0103:22b0:1:0
+Vesti
+p:mts Antena,c:000c1d,c:030c1d,c:190c1c,C:0b00
 0bc3:eeee0000:0103:22b0:1:0
 Red TV
-p:Telekom Srbija
+p:Telekom Srbija,c:000c27,c:030c27,c:190c26,C:0b00
+0bc3:eeee027a:0103:22b0:1:0
+Red TV
+p:Telekom Srbija,c:000c27,c:030c27,c:190c26,C:0b00
 0bc4:eeee0000:0103:22b0:1:0
 Blic TV
-p:Harmonic
+p:Harmonic,c:000c31,c:030c31,c:190c30,C:0b00
+0bc4:eeee027a:0103:22b0:1:0
+Blic TV
+p:Harmonic,c:000c31,c:030c31,c:190c30,C:0b00
 0bc5:eeee0000:0103:22b0:1:0
 Agro TV
-p:Harmonic
+p:Harmonic,c:000c3b,c:030c3b,c:190c3a,C:0b00
+0bc5:eeee027a:0103:22b0:1:0
+Agro TV
+p:Harmonic,c:000c3b,c:030c3b,c:190c3a,C:0b00
 0bc6:eeee0000:0103:22b0:1:0
 Toxic TV
-p:Telekom Srbija
+p:Telekom Srbija,c:000c45,c:030c45,c:190c44,C:0b00
+0bc6:eeee027a:0103:22b0:1:0
+Toxic TV
+p:Telekom Srbija,c:000c45,c:030c45,c:190c44,C:0b00
 0bc7:eeee0000:0103:22b0:1:0
 Pink Serije
-p:Harmonic
+p:Harmonic,c:000c4f,c:030c4f,c:190c4e,C:0b00
+0bc7:eeee027a:0103:22b0:1:0
+Pink Serije
+p:Harmonic,c:000c4f,c:030c4f,c:190c4e,C:0b00
 0bc8:eeee0000:0103:22b0:1:0
 Pink Movies
-p:Harmonic
+p:Harmonic,c:000c59,c:030c59,c:190c58,C:0b00
+0bc8:eeee027a:0103:22b0:1:0
+Pink Movies
+p:Harmonic,c:000c59,c:030c59,c:190c58,C:0b00
 0bc9:eeee0000:0103:22b0:1:0
 Pink Premium
-p:Harmonic
+p:Harmonic,c:000c63,c:030c63,c:190c62,C:0b00
+0bc9:eeee027a:0103:22b0:1:0
+Pink Premium
+p:Harmonic,c:000c63,c:030c63,c:190c62,C:0b00
 00ca:eeee0000:0002:22c7:1:0
 TV2
-p:TV2 Media Csoport Zrt.
+p:TV2 Media Csoport Zrt.,c:0007e5,c:0307e5,c:050001,c:1907e4
+00ca:eeee02aa:0002:22c7:1:0
+TV2
+p:TV2 Media Csoport Zrt.,c:0007e5,c:0307e5,c:050001,c:1907e4
 0bca:eeee0000:0103:22b0:1:0
 Pink Comedy
-p:Harmonic
+p:Harmonic,c:000c6d,c:030c6d,c:190c6c,C:0b00
+0bca:eeee027a:0103:22b0:1:0
+Pink Comedy
+p:Harmonic,c:000c6d,c:030c6d,c:190c6c,C:0b00
 00cb:eeee0000:0002:22c7:1:0
 RTL
-p:Magyar RTL Televizio Zrt.
+p:Magyar RTL Televizio Zrt.,c:0007ef,c:0307ef,c:050001,c:1907ee
+00cb:eeee02aa:0002:22c7:1:0
+RTL
+p:Magyar RTL Televizio Zrt.,c:0007ef,c:0307ef,c:050001,c:1907ee
 0bcb:eeee0000:0103:22b0:1:0
 Pink Western
-p:Harmonic
+p:Harmonic,c:000c77,c:030c77,c:190c76,C:0b00
+0bcb:eeee027a:0103:22b0:1:0
+Pink Western
+p:Harmonic,c:000c77,c:030c77,c:190c76,C:0b00
 0bcc:eeee0000:0103:22b0:1:0
 Dexy TV
-p:Harmonic,c:000c81,c:010c82,c:030c81,c:050001,C:0b00
+p:Harmonic,c:000c81,c:030c81,c:190c80,C:0b00
+0bcc:eeee027a:0103:22b0:1:0
+Dexy TV
+p:Harmonic,c:000c81,c:030c81,c:190c80,C:0b00
 0bcd:eeee0000:0103:22b0:1:0
 Minimax
-p:Harmonic
+p:Harmonic,c:000c8b,c:030c8b,c:190c8a,C:0b00
+0bcd:eeee027a:0103:22b0:1:0
+Minimax
+p:Harmonic,c:000c8b,c:030c8b,c:190c8a,C:0b00
 00ce:eeee0000:0002:22c7:1:0
 MAX4
-p:Network4 Media
+p:Network4 Media,c:00080d,c:03080d,c:050001,c:19080c
+00ce:eeee02aa:0002:22c7:1:0
+MAX4
+p:Network4 Media,c:00080d,c:03080d,c:050001,c:19080c
 0bce:eeee0000:0103:22b0:1:0
 Arena PREMIUM 1
-p:Harmonic,c:000c95,c:010c96,c:030c95,c:050001,C:0b00
+p:Harmonic,c:000c95,c:030c95,c:190c94,C:0b00
+0bce:eeee027a:0103:22b0:1:0
+Arena PREMIUM 1
+p:Harmonic,c:000c95,c:030c95,c:190c94,C:0b00
 00cf:eeee0000:0002:22c7:1:0
 Spektrum Home +
-p:AMC Networks
+p:AMC Networks,c:000817,c:030817,c:050001,c:190816
+00cf:eeee02aa:0002:22c7:1:0
+Spektrum Home +
+p:AMC Networks,c:000817,c:030817,c:050001,c:190816
 0bcf:eeee0000:0103:22b0:1:0
 Arena PREMIUM 2
-p:Harmonic
+p:Harmonic,c:000c9f,c:030c9f,c:190c9e,C:0b00
+0bcf:eeee027a:0103:22b0:1:0
+Arena PREMIUM 2
+p:Harmonic,c:000c9f,c:030c9f,c:190c9e,C:0b00
 00d0:eeee0000:0002:22c7:1:0
 MinDig TV Plusz Info
-p:AH Media Zrt.
+p:Pro-M Musorszoro,c:000821,c:030821,c:050001,c:190820
+00d0:eeee02aa:0002:22c7:1:0
+MinDig TV Plusz Info
+p:Pro-M Musorszoro,c:000821,c:030821,c:050001,c:190820
 0bd0:eeee0000:0103:22b0:1:0
 Arena PREMIUM 3
-p:Harmonic
+p:Harmonic,c:000ca9,c:030ca9,c:190ca8,C:0b00
+0bd0:eeee027a:0103:22b0:1:0
+Arena PREMIUM 3
+p:Harmonic,c:000ca9,c:030ca9,c:190ca8,C:0b00
 0bd1:eeee0000:0103:22b0:1:0
 Arena sport 2
-p:Harmonic
+p:Harmonic,c:000cb3,c:030cb3,c:190cb2,C:0b00
+0bd1:eeee027a:0103:22b0:1:0
+Arena sport 2
+p:Harmonic,c:000cb3,c:030cb3,c:190cb2,C:0b00
 0bd2:eeee0000:0103:22b0:1:0
 Arena sport 3
-p:Harmonic
+p:Harmonic,c:000cbd,c:030cbd,c:190cbc,C:0b00
+0bd2:eeee027a:0103:22b0:1:0
+Arena sport 3
+p:Harmonic,c:000cbd,c:030cbd,c:190cbc,C:0b00
 07d3:eeee0000:0c02:22b0:1:0
 Panon TV
-p:
+p:,c:0007ef,c:0307ef,c:050001,c:1907ee
 0bd3:eeee0000:0103:22b0:1:0
 Arena sport 4
-p:Telekom Srbija
+p:Telekom Srbija,c:000cc7,c:030cc7,c:190cc6,C:0b00
+0bd3:eeee027a:0103:22b0:1:0
+Arena sport 4
+p:Telekom Srbija,c:000cc7,c:030cc7,c:190cc6,C:0b00
 0bd4:eeee0000:0103:22b0:1:0
 Arena sport 5
-p:Telekom Srbija
+p:Telekom Srbija,c:000cd1,c:030cd1,c:190cd0,C:0b00
+0bd4:eeee027a:0103:22b0:1:0
+Arena sport 5
+p:Telekom Srbija,c:000cd1,c:030cd1,c:190cd0,C:0b00
 0bd5:eeee0000:0103:22b0:1:0
 Arena sport 6
-p:Telekom Srbija
+p:Telekom Srbija,c:000cdb,c:030cdb,c:190cda,C:0b00
+0bd5:eeee027a:0103:22b0:1:0
+Arena sport 6
+p:Telekom Srbija,c:000cdb,c:030cdb,c:190cda,C:0b00
 0bd6:eeee0000:0103:22b0:1:0
 Arena sport 7
-p:Harmonic
+p:Harmonic,c:00014b,c:03014b,c:19014a,C:0b00
+0bd6:eeee027a:0103:22b0:1:0
+Arena sport 7
+p:Harmonic,c:00014b,c:03014b,c:19014a,C:0b00
 0bd7:eeee0000:0103:22b0:1:0
 Arena sport 8
-p:Telekom Srbije
+p:Telekom Srbije,c:000cef,c:030cef,c:190cee,C:0b00
+0bd7:eeee027a:0103:22b0:1:0
+Arena sport 8
+p:Telekom Srbije,c:000cef,c:030cef,c:190cee,C:0b00
 07d9:eeee0000:0f02:22b0:1:0
 Dunav Televizija
-p:,c:00082b,c:01082c,c:03082b,c:050001,c:19082a
+p:,c:00082b,c:03082b,c:050001,c:19082a
 07e4:eeee0000:0c02:22b0:1:0
 INFO
-p:ETV
+p:ETV,c:000899,c:030899,c:050001,c:190898
 07e4:eeee0000:0f02:22b0:1:0
 INFO
-p:ETV,c:000899,c:01089a,c:030899,c:050001,c:190898
+p:ETV,c:000899,c:030899,c:050001,c:190898
 03e9:eeee0000:0f01:22b0:1:0
 RTS 1
-p:ETV,c:0003f3,c:0103f4,c:0203f9,c:0303f3,c:050001,c:1903f2
+p:ETV,c:0003f3,c:0303f3,c:050001,c:1903f2
+03e9:eeee0272:0f01:22b0:1:0
+RTS 1
+p:ETV,c:0003f3,c:0303f3,c:050001,c:1903f2
 03ea:eeee0000:0f01:22b0:1:0
 RTS 2
-p:ETV,c:0003fd,c:0103fe,c:020403,c:0303fd,c:050001,c:1903fc
+p:ETV,c:0003fd,c:0303fd,c:050001,c:1903fc
+03ea:eeee0272:0f01:22b0:1:0
+RTS 2
+p:ETV,c:0003fd,c:0303fd,c:050001,c:1903fc
 03eb:eeee0000:0f01:22b0:1:0
 PINK
-p:ETV,c:000407,c:010408,c:02040d,c:030407,c:050001,c:190406
+p:ETV,c:000407,c:030407,c:050001,c:190406
+03eb:eeee0272:0f01:22b0:1:0
+PINK
+p:ETV,c:000407,c:030407,c:050001,c:190406
 03ec:eeee0000:0f01:22b0:1:0
 TV B92
-p:ETV,c:000411,c:010412,c:030411,c:050001,c:190410
+p:ETV,c:000411,c:030411,c:050001,c:190410
+03ec:eeee0272:0f01:22b0:1:0
+TV B92
+p:ETV,c:000411,c:030411,c:050001,c:190410
 03ed:eeee0000:0f01:22b0:1:0
 PRVA
-p:ETV,c:00041b,c:01041c,c:020421,c:03041b,c:050001,c:19041a
+p:ETV,c:00041b,c:03041b,c:050001,c:19041a
+03ed:eeee0272:0f01:22b0:1:0
+PRVA
+p:ETV,c:00041b,c:03041b,c:050001,c:19041a
 03ee:eeee0000:0f01:22b0:1:0
 HAPPY
-p:ETV,c:000425,c:010426,c:030425,c:050001,c:190424
+p:ETV,c:000425,c:030425,c:050001,c:190424
+03ee:eeee0272:0f01:22b0:1:0
+HAPPY
+p:ETV,c:000425,c:030425,c:050001,c:190424
 03ef:eeee0000:0f01:22b0:1:0
 RTS 3
-p:ETV,c:00042f,c:010430,c:020435,c:03042f,c:050001,c:19042e
+p:ETV,c:00042f,c:03042f,c:050001,c:19042e
+03ef:eeee0272:0f01:22b0:1:0
+RTS 3
+p:ETV,c:00042f,c:03042f,c:050001,c:19042e
 01f4:eeee0000:0005:22c7:1:0
 FitHD/TotalDance
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:001389,c:031389,c:050007,c:191388,C:0b00,C:0bc1
 01f5:eeee0000:0005:22c7:1:0
 Galaxy4
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:001393,c:031393,c:050007,c:191392,C:0b00,C:0bc1
 01f6:eeee0000:0005:22c7:1:0
 RTL Gold
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:00139d,c:03139d,c:050007,c:19139c,C:0b00,C:0bc1
 01f7:eeee0000:0005:22c7:1:0
 Sport 2 HD
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:0013a7,c:0313a7,c:050007,c:1913a6,C:0b00,C:0bc1
 01f8:eeee0000:0005:22c7:1:0
 Spiler 2 HD
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:0013b1,c:0313b1,c:050007,c:1913b0,C:0b00,C:0bc1
 01f9:eeee0000:0005:22c7:1:0
 Izaura TV
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:0013bb,c:0313bb,c:050007,c:1913ba,C:0b00,C:0bc1
 01fa:eeee0000:0005:22c7:1:0
 Inv. Discovery
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:0013c5,c:0313c5,c:050007,c:1913c4,C:0b00,C:0bc1
 01fe:eeee0000:0005:22c7:1:0
 Minimax
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:0013ed,c:0313ed,c:050007,c:1913ec,C:0b00,C:0bc1
 01ff:eeee0000:0005:22c7:1:0
 Slager TV
-p:AH Media Zrt.,C:0000
+p:One Magyarorszag Zrt.,c:0013f7,c:0313f7,c:050007,c:1913f6,C:0b00,C:0bc1
 0411:eeee0000:0c02:22b0:2:0
 RADIO BG 1
 p:ETV
 0411:eeee0000:0f02:22b0:2:0
 RADIO BG 1
-p:ETV,c:030583,c:190582
+p:ETV
 0412:eeee0000:0c02:22b0:2:0
 RADIO BG 2
 p:ETV
 0412:eeee0000:0f02:22b0:2:0
 RADIO BG 2
-p:ETV,c:03058d,c:19058c
+p:ETV
 0413:eeee0000:0c02:22b0:2:0
 RADIO BG 202
 p:ETV
 0413:eeee0000:0f02:22b0:2:0
 RADIO BG 202
-p:ETV,c:030597,c:190596
+p:ETV
 0082:eeee0000:0001:22c7:2:0
+Kossuth Radio
+p:Magyar Radio
+0082:eeee025a:0001:22c7:2:0
 Kossuth Radio
 p:Magyar Radio
 0083:eeee0000:0001:22c7:2:0
 Petofi Radio
 p:Magyar Radio
+0083:eeee025a:0001:22c7:2:0
+Petofi Radio
+p:Magyar Radio
 0084:eeee0000:0001:22c7:2:0
+Bartok Radio
+p:Magyar Radio
+0084:eeee025a:0001:22c7:2:0
 Bartok Radio
 p:Magyar Radio
 0085:eeee0000:0001:22c7:2:0
 Danko Radio
 p:Magyar Radio
+0085:eeee025a:0001:22c7:2:0
+Danko Radio
+p:Magyar Radio
 010e:eeee0000:0002:22c7:12:0
 DataService_B
-p:AH Media Zrt.
+p:Pro-M Musorszoro,c:031fff,c:190a8c
+010e:eeee02aa:0002:22c7:12:0
+DataService_B
+p:Pro-M Musorszoro,c:031fff,c:190a8c
 023a:eeee0000:0005:22c7:12:0
 DataService_E
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:031fff,c:191644
+176a:eeee0000:d403:20bf:12:0
+Irdeto Code HD-T52IR
+p:OIV,c:031fff,c:191734
 0172:eeee0000:0003:22c7:12:0
 DataService_C
-p:AH Media Zrt.
+p:One Magyarorszag Zrt.,c:031fff,c:190e74
+0172:eeee0282:0003:22c7:12:0
+DataService_C
+p:One Magyarorszag Zrt.,c:031fff,c:190e74
 0f9a:eeee0000:d405:20bf:12:0
 Irdeto Code HD-T52IR
 p:OIV,c:031fff,c:190f64
 00aa:eeee0000:0001:22c7:12:0
 DataService_A
-p:AH Media Zrt.
+p:Pro-M Musorszoro,c:031fff,c:1906a4
+00aa:eeee025a:0001:22c7:12:0
+DataService_A
+p:Pro-M Musorszoro,c:031fff,c:1906a4
 01d6:eeee0000:0004:22c7:12:0
 DataService_D
-p:AH Media Zrt.
-510e:eeee0000:0015:20bf:22:0
-VividRed
-p:OIV
-1518:eeee0000:d403:20bf:22:0
-Arenasport 1
-p:OIV,C:0000
-1519:eeee0000:d403:20bf:22:0
-Arenasport 2
-p:OIV,C:0000
-151a:eeee0000:d403:20bf:22:0
-Arenasport 3
-p:OIV,C:0000
-151b:eeee0000:d403:20bf:22:0
-Arenasport 4
-p:OIV
-0c1c:eeee0000:d405:20bf:22:0
-EVOtv info
-p:OIV,C:0000
-151c:eeee0000:d403:20bf:22:0
-Arenasport 5
-p:OIV
-151d:eeee0000:d403:20bf:22:0
-Arenasport 6
-p:OIV
-0c1f:eeee0000:d405:20bf:22:0
-PickboxTV
-p:OIV,C:0000
-0c21:eeee0000:d405:20bf:22:0
-Al Jazeera Balkans
-p:OIV,c:000bd7,c:030bd7,c:050007,C:069b
-0c22:eeee0000:d405:20bf:22:0
-CNN
-p:OIV,C:0000
-0c23:eeee0000:d405:20bf:22:0
-National Geographic
-p:OIV,C:0000
-0c24:eeee0000:d405:20bf:22:0
-NatGeo Wild
-p:OIV,C:0000
-0c25:eeee0000:d405:20bf:22:0
-Viasat Explore
-p:OIV,C:0000
-0c26:eeee0000:d405:20bf:22:0
-Viasat History
-p:OIV,C:0000
-0c28:eeee0000:d405:20bf:22:0
-Epic Drama
-p:OIV,C:0000
-1460:eeee0000:d403:20bf:22:0
-CineStar TV Comedy
-p:OIV,C:0000
-1461:eeee0000:d403:20bf:22:0
-CineStar TV Action and Thriller
-p:OIV,C:0000
-1462:eeee0000:d403:20bf:22:0
-CineStar TV Fantasy
-p:OIV,C:0000
-1463:eeee0000:d403:20bf:22:0
-STAR Crime
-p:OIV,C:0000
-1464:eeee0000:d403:20bf:22:0
-STAR Movies
-p:OIV,C:0000
-1677:eeee0000:d403:20bf:22:0
-Vivid
-p:OIV
-157c:eeee0000:d403:20bf:22:0
-24Kitchen
-p:OIV
-0c82:eeee0000:d405:20bf:22:0
-Cinemax
-p:OIV
-0c83:eeee0000:d405:20bf:22:0
-Cinemax 2
-p:OIV
-0c84:eeee0000:d405:20bf:22:0
-Klasik
-p:OIV
-0c85:eeee0000:d405:20bf:22:0
-Viasat Kino
-p:OIV
-0c86:eeee0000:d405:20bf:22:0
-MGTV
-p:OIV
-0c88:eeee0000:d405:20bf:22:0
-RTL Living
-p:OIV
-0c89:eeee0000:d405:20bf:22:0
-Kino TV
-p:OIV
-0c8a:eeee0000:d405:20bf:22:0
-CineStar 1
-p:OIV
-0c8b:eeee0000:d405:20bf:22:0
-STAR
-p:OIV
-0c8c:eeee0000:d405:20bf:22:0
-STAR Life
-p:OIV
-0c8d:eeee0000:d405:20bf:22:0
-M1 FILM
-p:OIV
-0c8e:eeee0000:d405:20bf:22:0
-M1 GOLD
-p:OIV
-14b4:eeee0000:d403:20bf:22:0
-Nicktoons
-p:OIV,C:0000
-14b5:eeee0000:d403:20bf:22:0
-Toon kids
-p:OIV,C:0000
-14b6:eeee0000:d403:20bf:22:0
-Baby TV
-p:OIV,C:0000
-14b7:eeee0000:d403:20bf:22:0
-Disney Channel
-p:OIV,C:0000
-14b8:eeee0000:d403:20bf:22:0
-Disney Junior
-p:OIV,C:0000
-14b9:eeee0000:d403:20bf:22:0
-Nickelodeon
-p:OIV,C:0000
-4fb9:eeee0000:0015:20bf:22:0
-Arenasport 9
-p:OIV
-14ba:eeee0000:d403:20bf:22:0
-Nick Jr.
-p:OIV,C:0000
-4fba:eeee0000:0015:20bf:22:0
-Arenasport 10
-p:OIV
+p:One Magyarorszag Zrt.,c:031fff,c:19125c
 07d1:eeee0000:0f02:22b0:22:0
 TV Most
-p:JP ETV,c:0007db,c:0107dc,c:0307db,c:050001,c:1907da
+p:JP ETV,c:0007db,c:0307db,c:050001,c:1907da
 07d4:eeee0000:0f02:22b0:22:0
 Novosadska TV
-p:ETV,c:0007f9,c:0107fa,c:0307f9,c:050001,c:1907f8
-15e0:eeee0000:d403:20bf:22:0
-MTV
-p:OIV
-15e1:eeee0000:d403:20bf:22:0
-MTV 00s
-p:OIV
-15e3:eeee0000:d403:20bf:22:0
-DM Sat
-p:OIV
-15e4:eeee0000:d403:20bf:22:0
-Jugoton
-p:OIV
-15e5:eeee0000:d403:20bf:22:0
-RTL Crime
-p:OIV
-15e6:eeee0000:d403:20bf:22:0
-RTL Adria
-p:OIV
-15e7:eeee0000:d403:20bf:22:0
-RTL Passion
-p:OIV
-13ed:eeee0000:d403:20bf:22:0
-Da Vinci
-p:OIV,C:0000
-13ee:eeee0000:d403:20bf:22:0
-Laudato TV
-p:OIV,C:0000
-0c29:eeee0000:d405:20bf:25:0
-Doku TV HD
-p:OIV,C:0000
-0c2a:eeee0000:d405:20bf:25:0
-Viasat Nature HD
-p:OIV,C:0000
-145f:eeee0000:d403:20bf:25:0
-CineStar TV2
-p:OIV,C:0000
+p:ETV,c:0007f9,c:0307f9,c:050001,c:1907f8
 0064:eeee0000:0001:22c7:25:0
 M1 HD
-p:Magyar Televizio,c:0003e9,c:0103ea,c:0203eb,c:0303e9,c:050001
+p:Magyar Televizio,c:0003e9,c:0303e9,c:050001,c:1903e8
+0064:eeee025a:0001:22c7:25:0
+M1 HD
+p:Magyar Televizio,c:0003e9,c:0303e9,c:050001,c:1903e8
 0065:eeee0000:0001:22c7:25:0
 M4 Sport HD
-p:Magyar Televizio
+p:Magyar Televizio,c:0003f3,c:0303f3,c:050001,c:1903f2
+0065:eeee025a:0001:22c7:25:0
+M4 Sport HD
+p:Magyar Televizio,c:0003f3,c:0303f3,c:050001,c:1903f2
 0066:eeee0000:0001:22c7:25:0
 Duna HD
-p:Duna Televizio
+p:Duna Televizio,c:0003fd,c:0303fd,c:050001,c:1903fc
+0066:eeee025a:0001:22c7:25:0
+Duna HD
+p:Duna Televizio,c:0003fd,c:0303fd,c:050001,c:1903fc
 0067:eeee0000:0001:22c7:25:0
 DunaW/M4Sport+
-p:Duna Televizio
-0c7f:eeee0000:d405:20bf:25:0
-HBO HD
-p:OIV
-0c80:eeee0000:d405:20bf:25:0
-HBO2 HD
-p:OIV
-0c81:eeee0000:d405:20bf:25:0
-HBO3 HD
-p:OIV
-4fb6:eeee0000:0015:20bf:25:0
-MAXSport 1
-p:OIV
-4fb7:eeee0000:0015:20bf:25:0
-Arenasport 7
-p:OIV
-4fb8:eeee0000:0015:20bf:25:0
-Arenasport 8
-p:OIV
+p:Duna Televizio,c:000407,c:030407,c:050001,c:190406
+0067:eeee025a:0001:22c7:25:0
+DunaW/M4Sport+
+p:Duna Televizio,c:000407,c:030407,c:050001,c:190406
 00c8:eeee0000:0002:22c7:25:0
 M2 HD
-p:Magyar Televizio
+p:Magyar Televizio,c:0007d1,c:0307d1,c:050001,c:1907d0
+00c8:eeee02aa:0002:22c7:25:0
+M2 HD
+p:Magyar Televizio,c:0007d1,c:0307d1,c:050001,c:1907d0
 00c9:eeee0000:0002:22c7:25:0
 M5 HD
-p:Magyar Televizio
+p:Magyar Televizio,c:0007db,c:0307db,c:050001,c:1907da
+00c9:eeee02aa:0002:22c7:25:0
+M5 HD
+p:Magyar Televizio,c:0007db,c:0307db,c:050001,c:1907da
 03f3:eeee0000:0c02:22b0:25:0
 RTV 1 HD
-p:ETV
+p:ETV,c:000457,c:030457,c:050001,c:190456
 03f3:eeee0000:0f02:22b0:25:0
 RTV 1 HD
-p:ETV,c:000457,c:010458,c:030457,c:050001,c:190456
+p:ETV,c:000457,c:030457,c:050001,c:190456
 03f4:eeee0000:0c02:22b0:25:0
 RTV 2 HD
-p:ETV
+p:ETV,c:000461,c:030461,c:050001,c:190460
 03f4:eeee0000:0f02:22b0:25:0
 RTV 2 HD
-p:ETV,c:000461,c:010462,c:030461,c:050001,c:190460
+p:ETV,c:000461,c:030461,c:050001,c:190460
 510e:eeee0000:0015:20bf:31:0
 VividRed
-p:
+p:,c:00053d,c:03053d,c:19053c,C:069b
+1518:eeee0000:d403:20bf:31:0
+Arenasport 1
+p:,c:0013c5,c:0313c5,c:1913c4,C:069b
+1519:eeee0000:d403:20bf:31:0
+Arenasport 2
+p:,c:0013cf,c:0313cf,c:1913ce,C:069b
+151a:eeee0000:d403:20bf:31:0
+Arenasport 3
+p:,c:0013d9,c:0313d9,c:1913d8,C:069b
+151b:eeee0000:d403:20bf:31:0
+Arenasport 4
+p:,c:0013e3,c:0313e3,c:1913e2,C:069b
 0c1c:eeee0000:d405:20bf:31:0
 EVOtv info
 p:,c:000bc3,c:030bc3,c:050007,c:190bc2,C:069b
+151c:eeee0000:d403:20bf:31:0
+Arenasport 5
+p:,c:0013ed,c:0313ed,c:1913ec,C:069b
+151d:eeee0000:d403:20bf:31:0
+Arenasport 6
+p:,c:0013f7,c:0313f7,c:1913f6,C:069b
 0c1f:eeee0000:d405:20bf:31:0
 Pickbox 1
 p:,c:000c6d,c:030c6d,c:050007,c:190c6c,C:069b
@@ -13273,21 +13330,24 @@ Pickbox 2
 p:,c:000bd7,c:030bd7,c:050007,c:190bd6,C:069b
 0c22:eeee0000:d405:20bf:31:0
 CNN
-p:
+p:,c:000be1,c:030be1,c:050007,c:190be0,C:069b
 0c23:eeee0000:d405:20bf:31:0
 National Geographic
-p:,c:000beb,c:030beb,c:190bea,C:069b
+p:,c:000beb,c:030beb,c:050007,c:190bea,C:069b
 0c24:eeee0000:d405:20bf:31:0
 NatGeo Wild
-p:,c:000bf5,c:030bf5,c:190bf4,C:069b
+p:
 0c25:eeee0000:d405:20bf:31:0
 Viasat Explore
 p:,c:000bff,c:030bff,c:190bfe,C:069b
+1525:eeee0000:d403:20bf:31:0
+SK 2
+p:,c:0014e7,c:0314e7,c:1914e6,C:069b
 0c26:eeee0000:d405:20bf:31:0
 Viasat History
 p:,c:000c09,c:030c09,c:190c08,C:069b
 0c28:eeee0000:d405:20bf:31:0
-Epic Drama
+Viasat Epic Drama
 p:,c:000c1d,c:030c1d,c:190c1c,C:069b
 0c29:eeee0000:d405:20bf:31:0
 Doku TV HD
@@ -13297,13 +13357,37 @@ Viasat Nature HD
 p:,c:000cbd,c:030cbd,c:190cbc,C:069b
 0844:eeee0000:0015:20bf:31:0
 Plava vinkovacka HD
-p:OIV
+p:OIV,c:00083f,c:03083f,c:050007,c:19083e
 0845:eeee0000:0015:20bf:31:0
 STV HD
-p:OIV
+p:OIV,c:000849,c:030849,c:050007,c:190848
 0846:eeee0000:0015:20bf:31:0
 OSJECKA TV HD
-p:OIV
+p:OIV,c:000853,c:030853,c:050007,c:190852
+145f:eeee0000:d403:20bf:31:0
+CineStar 2
+p:,c:00146f,c:03146f,c:050007,c:19146e,C:069b
+1460:eeee0000:d403:20bf:31:0
+CineStar Comedy and Family
+p:,c:0014dd,c:0314dd,c:050007,c:1914dc,C:069b
+1461:eeee0000:d403:20bf:31:0
+CineStar Action and Thriller
+p:,c:00148d,c:03148d,c:050007,c:19148c,C:069b
+1462:eeee0000:d403:20bf:31:0
+CineStar Fantasy
+p:,c:001465,c:031465,c:050007,c:191464,C:069b
+1463:eeee0000:d403:20bf:31:0
+STAR Crime
+p:,c:001415,c:031415,c:050007,c:191414,C:069b
+1464:eeee0000:d403:20bf:31:0
+STAR Movies
+p:,c:00141f,c:03141f,c:050007,c:19141e,C:069b
+1677:eeee0000:d403:20bf:31:0
+Vivid
+p:,c:001483,c:031483,c:191482,C:069b
+157c:eeee0000:d403:20bf:31:0
+24Kitchen
+p:,c:00140b,c:03140b,c:19140a,C:069b
 0c7f:eeee0000:d405:20bf:31:0
 HBO HD
 p:,c:000bcd,c:030bcd,c:190bcc,C:069b
@@ -13349,42 +13433,78 @@ p:,c:000cdb,c:030cdb,c:190cda,C:069b
 0c8e:eeee0000:d405:20bf:31:0
 M1 GOLD
 p:,c:000c13,c:030c13,c:190c12,C:069b
+14b4:eeee0000:d403:20bf:31:0
+Nicktoons
+p:,c:0014c9,c:0314c9,c:050007,c:1914c8,C:069b
+14b5:eeee0000:d403:20bf:31:0
+Toon kids
+p:
+14b6:eeee0000:d403:20bf:31:0
+Baby TV
+p:,c:00139d,c:03139d,c:19139c,C:069b
 4fb6:eeee0000:0015:20bf:31:0
 MAXSport 1
 p:
+14b7:eeee0000:d403:20bf:31:0
+Disney Channel
+p:,c:0013a7,c:0313a7,c:1913a6,C:069b
 4fb7:eeee0000:0015:20bf:31:0
 Arenasport 7
-p:
+p:,c:000515,c:030515,c:190514,C:069b
+14b8:eeee0000:d403:20bf:31:0
+Disney Junior
+p:,c:0013b1,c:0313b1,c:1913b0,C:069b
 4fb8:eeee0000:0015:20bf:31:0
 Arenasport 8
-p:
+p:,c:00051f,c:03051f,c:19051e,C:069b
+14b9:eeee0000:d403:20bf:31:0
+Nickelodeon
+p:,c:0013bb,c:0313bb,c:1913ba,C:069b
 4fb9:eeee0000:0015:20bf:31:0
 Arenasport 9
-p:
+p:,c:000529,c:030529,c:190528,C:069b
+14ba:eeee0000:d403:20bf:31:0
+Nick Jr.
+p:,c:00143d,c:03143d,c:19143c,C:069b
 4fba:eeee0000:0015:20bf:31:0
 Arenasport 10
-p:
+p:,c:000533,c:030533,c:190532,C:069b
 4fbb:eeee0000:0015:20bf:31:0
 MAXSport 2
-p:
+p:,c:00055b,c:03055b,c:19055a,C:069b
 4fbc:eeee0000:0015:20bf:31:0
 SK 1
-p:
+p:,c:000565,c:030565,c:190564,C:069b
 07db:eeee0000:0015:20bf:31:0
 Sportska televizija HD
-p:OIV
+p:OIV,c:0007db,c:0307db,c:050007,c:1907da
 07dc:eeee0000:0015:20bf:31:0
 RTL KOCKICA HD
-p:OIV,c:0007e5,c:0307e5,c:050007
+p:OIV,c:0007e5,c:0307e5,c:050007,c:1907e4
 07dd:eeee0000:0015:20bf:31:0
 CMC HD
-p:OIV
+p:OIV,c:0007ef,c:0307ef,c:050007,c:1907ee
+15e3:eeee0000:d403:20bf:31:0
+DM Sat
+p:,c:001447,c:031447,c:191446,C:069b
+15e4:eeee0000:d403:20bf:31:0
+Jugoton
+p:,c:001451,c:031451,c:191450,C:069b
+15e5:eeee0000:d403:20bf:31:0
+RTL Crime
+p:,c:00145b,c:03145b,c:19145a,C:069b
+15e6:eeee0000:d403:20bf:31:0
+RTL Adria
+p:,c:001479,c:031479,c:191478,C:069b
+15e7:eeee0000:d403:20bf:31:0
+RTL Passion
+p:,c:0014d3,c:0314d3,c:1914d2,C:069b
 03e9:eeee0000:000a:20bf:31:0
 HTV1 HD
-p:OIV,c:0003f3,c:0203f7,c:0303f3,c:050007,c:1903f2
+p:OIV,c:0003f3,c:0303f3,c:050007,c:1903f2
 03ea:eeee0000:000a:20bf:31:0
 HTV2 HD
-p:OIV,c:0003fd,c:020401,c:0303fd,c:050007,c:1903fc
+p:OIV,c:0003fd,c:0303fd,c:050007,c:1903fc
 03eb:eeee0000:000a:20bf:31:0
 RTL HD
 p:OIV,c:000407,c:030407,c:050007,c:190406
@@ -13393,15 +13513,21 @@ NOVA TV HD
 p:OIV,c:000411,c:030411,c:050007,c:190410
 03ed:eeee0000:000a:20bf:31:0
 HRT3 HD
-p:OIV,c:00041b,c:02041f,c:03041b,c:050007,c:19041a
+p:OIV,c:00041b,c:03041b,c:050007,c:19041a
+13ed:eeee0000:d403:20bf:31:0
+Da Vinci
+p:,c:001393,c:031393,c:050007,c:191392,C:069b
 03ee:eeee0000:000a:20bf:31:0
 HRT4 HD
 p:OIV,c:000425,c:030425,c:050007,c:190424
+13ee:eeee0000:d403:20bf:31:0
+Laudato TV
+p:,c:0014a1,c:0314a1,c:050007,c:1914a0,C:069b
 03ef:eeee0000:000a:20bf:31:0
 RTL 2 HD
 p:OIV,c:00042f,c:03042f,c:050007,c:19042e
 03f0:eeee0000:000a:20bf:31:0
 Doma TV HD
-p:OIV,c:000439,c:02043d,c:030439,c:050007,c:190438
+p:OIV,c:000439,c:030439,c:050007,c:190438
 end
 Generated by Simple Enigma Settings Editor ver. 1.0.0.5 - http://www.krkadoni.com
